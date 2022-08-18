@@ -48,3 +48,8 @@ SGE Utils module implements simple script engine which gives ability to maintain
 ## License
 SGE is licensed under GPL license.
 
+## Documentation
+UML design files are available in each module in subfolder `internal/doc`. StarUML application is need to open them.
+
+## Examples
+Examples of use are available in each module in subfolder `internal/tsrc`.
