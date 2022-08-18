@@ -1,0 +1,13 @@
+
+#include <appinfo.rh>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0xE64F366B
+
+RESOURCE APP_REGISTRATION_INFO
+  {
+  app_file="texKTX";
+  embeddability=KAppNotEmbeddable;
+  newfile=KAppDoesNotSupportNewFile;
+  }
+

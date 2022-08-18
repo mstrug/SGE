@@ -1,0 +1,53 @@
+/*
+============================================================================
+ Name		: texKTX.mmp
+ Author	  : 
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is the project specification file for info.
+============================================================================
+*/
+
+TARGET		  texKTX.exe
+TARGETTYPE	  exe
+UID			 0 0xE64F366B
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE	 \epoc32\include\SGE
+SYSTEMINCLUDE	 \epoc32\include\SGE\SGEApplication
+SYSTEMINCLUDE	 \epoc32\include\SGE\SGEEgl
+
+SOURCEPATH	  ..\src
+SOURCE		  texKTX.cpp
+
+
+LIBRARY		   libgles_cm.lib
+LIBRARY		   euser.lib ws32.lib
+STATICLIBRARY	   SGEEgl_staticlib.lib 
+STATICLIBRARY	   SGEGl_staticLib.lib
+STATICLIBRARY	   SGEApplication_staticlib.lib
+STATICLIBRARY	   SGEBitmap_staticlib.lib
+STATICLIBRARY	   SGEFile_staticlib.lib
+
+LIBRARY           eikcore.lib 
+LIBRARY           avkon.lib
+LIBRARY           apparc.lib
+LIBRARY           cone.lib
+LIBRARY           estor.lib 
+LIBRARY           efsrv.lib 
+LIBRARY           bafl.lib
+LIBRARY           bitgdi.lib 
+LIBRARY           fbscli.lib 
+LIBRARY           hal.lib 
+LIBRARY           scdv.lib
+LIBRARY           bitmaptransforms.lib imageconversion.lib gdi.lib
+
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif
+SOURCEPATH ..\data
+START RESOURCE texKTX_reg.rss
+	TARGETPATH \private\10003a3f\import\apps
+END
+

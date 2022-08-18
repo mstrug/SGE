@@ -1,0 +1,50 @@
+EXPORTS
+	??0TSGEAudioConfig@@QAE@IW4TSGEAudioSampleRate@@W4TSGEAudioChannels@@W4TSGEAudioBufferDataType@@W4TSGEAudioSubsystem@@HHI@Z @ 1 NONAME ; TSGEAudioConfig::TSGEAudioConfig(unsigned int, enum TSGEAudioSampleRate, enum TSGEAudioChannels, enum TSGEAudioBufferDataType, enum TSGEAudioSubsystem, int, int, unsigned int)
+	??0TSGEAudioConfig@@QAE@XZ @ 2 NONAME ; TSGEAudioConfig::TSGEAudioConfig(void)
+	??0TSGEAudioFile@@QAE@ABVTDesC16@@IW4TSGEAudioGroup@@W4TSGEAudioFileType@@@Z @ 3 NONAME ; TSGEAudioFile::TSGEAudioFile(class TDesC16 const &, unsigned int, enum TSGEAudioGroup, enum TSGEAudioFileType)
+	??1CSGEAudioProvider@@UAE@XZ @ 4 NONAME ; CSGEAudioProvider::~CSGEAudioProvider(void)
+	?BufferDataTypeForSubsystem@TSGEAudioConfig@@QAEIXZ @ 5 NONAME ABSENT ; unsigned int TSGEAudioConfig::BufferDataTypeForSubsystem(void)
+	?BufferSizeInBytes@TSGEAudioConfig@@QAEIXZ @ 6 NONAME ABSENT ; unsigned int TSGEAudioConfig::BufferSizeInBytes(void)
+	?CalculateSoundLatency@TSGEAudioConfig@@QAEIXZ @ 7 NONAME ABSENT ; unsigned int TSGEAudioConfig::CalculateSoundLatency(void)
+	?ChannelsForSubsystem@TSGEAudioConfig@@QAEIXZ @ 8 NONAME ABSENT ; unsigned int TSGEAudioConfig::ChannelsForSubsystem(void)
+	?CreateAudioStreamL@CSGEAudioProvider@@QAEXXZ @ 9 NONAME ; void CSGEAudioProvider::CreateAudioStreamL(void)
+	?DestroyAudioStream@CSGEAudioProvider@@QAEXXZ @ 10 NONAME ; void CSGEAudioProvider::DestroyAudioStream(void)
+	?FourCC@TSGEAudioConfig@@QAEIXZ @ 11 NONAME ABSENT ; unsigned int TSGEAudioConfig::FourCC(void)
+	?LoadFileL@CSGEAudioProvider@@QAEXABVTDesC16@@VTSGEAudioFile@@@Z @ 12 NONAME ; void CSGEAudioProvider::LoadFileL(class TDesC16 const &, class TSGEAudioFile)
+	?LoadFileL@CSGEAudioProvider@@QAEXVTSGEAudioFile@@@Z @ 13 NONAME ; void CSGEAudioProvider::LoadFileL(class TSGEAudioFile)
+	?LoadFilesL@CSGEAudioProvider@@QAEXAAV?$RArray@VTSGEAudioFile@@@@@Z @ 14 NONAME ; void CSGEAudioProvider::LoadFilesL(class RArray<class TSGEAudioFile> &)
+	?LoadFilesL@CSGEAudioProvider@@QAEXABVTDesC16@@AAV?$RArray@VTSGEAudioFile@@@@@Z @ 15 NONAME ; void CSGEAudioProvider::LoadFilesL(class TDesC16 const &, class RArray<class TSGEAudioFile> &)
+	?Mute@CSGEAudioProvider@@QAEXI@Z @ 16 NONAME ; void CSGEAudioProvider::Mute(unsigned int)
+	?MuteAll@CSGEAudioProvider@@QAEXXZ @ 17 NONAME ; void CSGEAudioProvider::MuteAll(void)
+	?NewL@CSGEAudioProvider@@SAPAV1@PAVMSGEAudioProviderObserver@@VTSGEAudioConfig@@@Z @ 18 NONAME ; class CSGEAudioProvider * CSGEAudioProvider::NewL(class MSGEAudioProviderObserver *, class TSGEAudioConfig)
+	?NewLC@CSGEAudioProvider@@SAPAV1@PAVMSGEAudioProviderObserver@@VTSGEAudioConfig@@@Z @ 19 NONAME ; class CSGEAudioProvider * CSGEAudioProvider::NewLC(class MSGEAudioProviderObserver *, class TSGEAudioConfig)
+	?Pause@CSGEAudioProvider@@QAEXI@Z @ 20 NONAME ; void CSGEAudioProvider::Pause(unsigned int)
+	?PauseAll@CSGEAudioProvider@@QAEXXZ @ 21 NONAME ; void CSGEAudioProvider::PauseAll(void)
+	?Play@CSGEAudioProvider@@QAEHIH@Z @ 22 NONAME ; int CSGEAudioProvider::Play(unsigned int, int)
+	?Resume@CSGEAudioProvider@@QAEXI@Z @ 23 NONAME ; void CSGEAudioProvider::Resume(unsigned int)
+	?ResumeAll@CSGEAudioProvider@@QAEXXZ @ 24 NONAME ; void CSGEAudioProvider::ResumeAll(void)
+	?SampleRateForSubsystem@TSGEAudioConfig@@QAEIXZ @ 25 NONAME ABSENT ; unsigned int TSGEAudioConfig::SampleRateForSubsystem(void)
+	?SetBufferSizeByLatency@TSGEAudioConfig@@QAEXI@Z @ 26 NONAME ; void TSGEAudioConfig::SetBufferSizeByLatency(unsigned int)
+	?SetObserver@CSGEAudioProvider@@QAEXPAVMSGEAudioProviderObserver@@@Z @ 27 NONAME ; void CSGEAudioProvider::SetObserver(class MSGEAudioProviderObserver *)
+	?SetVolume@CSGEAudioProvider@@QAEXIH@Z @ 28 NONAME ; void CSGEAudioProvider::SetVolume(unsigned int, int)
+	?SetVolumeAll@CSGEAudioProvider@@QAEXH@Z @ 29 NONAME ; void CSGEAudioProvider::SetVolumeAll(int)
+	?SizeOfBufferDataType@TSGEAudioConfig@@QAEIXZ @ 30 NONAME ABSENT ; unsigned int TSGEAudioConfig::SizeOfBufferDataType(void)
+	?Stop@CSGEAudioProvider@@QAEXI@Z @ 31 NONAME ; void CSGEAudioProvider::Stop(unsigned int)
+	?StopAll@CSGEAudioProvider@@QAEXXZ @ 32 NONAME ; void CSGEAudioProvider::StopAll(void)
+	?TrackCount@CSGEAudioProvider@@QAEHXZ @ 33 NONAME ; int CSGEAudioProvider::TrackCount(void)
+	?TrackState@CSGEAudioProvider@@QAE?AVTSGEAudioTrackState@@I@Z @ 34 NONAME ; class TSGEAudioTrackState CSGEAudioProvider::TrackState(unsigned int)
+	?Unmute@CSGEAudioProvider@@QAEXI@Z @ 35 NONAME ; void CSGEAudioProvider::Unmute(unsigned int)
+	?UnmuteAll@CSGEAudioProvider@@QAEXXZ @ 36 NONAME ; void CSGEAudioProvider::UnmuteAll(void)
+	?IsSilentProfileL@CSGEAudioProvider@@SAHH@Z @ 37 NONAME ; int CSGEAudioProvider::IsSilentProfileL(int)
+	?SetVolumeGroup@CSGEAudioProvider@@QAEXW4TSGEAudioGroup@@H@Z @ 38 NONAME ; void CSGEAudioProvider::SetVolumeGroup(enum TSGEAudioGroup, int)
+	?CalculateSoundLatency@TSGEAudioConfig@@QBEIXZ @ 39 NONAME ; unsigned int TSGEAudioConfig::CalculateSoundLatency(void) const
+	?BufferSizeInBytes@TSGEAudioConfig@@QBEIXZ @ 40 NONAME ; unsigned int TSGEAudioConfig::BufferSizeInBytes(void) const
+	?SetVolumeDefault@CSGEAudioProvider@@QAEXW4TSGEAudioGroup@@H@Z @ 41 NONAME ; void CSGEAudioProvider::SetVolumeDefault(enum TSGEAudioGroup, int)
+	?SampleRateForSubsystem@TSGEAudioConfig@@QBEIXZ @ 42 NONAME ; unsigned int TSGEAudioConfig::SampleRateForSubsystem(void) const
+	?CreateEmptyTracksL@CSGEAudioProvider@@QAEXH@Z @ 43 NONAME ; void CSGEAudioProvider::CreateEmptyTracksL(int)
+	?FourCC@TSGEAudioConfig@@QBEIXZ @ 44 NONAME ; unsigned int TSGEAudioConfig::FourCC(void) const
+	?ChannelsForSubsystem@TSGEAudioConfig@@QBEIXZ @ 45 NONAME ; unsigned int TSGEAudioConfig::ChannelsForSubsystem(void) const
+	?GetMaxVolume@CSGEAudioProvider@@QBEHXZ @ 46 NONAME ; int CSGEAudioProvider::GetMaxVolume(void) const
+	?BufferDataTypeForSubsystem@TSGEAudioConfig@@QBEIXZ @ 47 NONAME ; unsigned int TSGEAudioConfig::BufferDataTypeForSubsystem(void) const
+	?SizeOfBufferDataType@TSGEAudioConfig@@QBEIXZ @ 48 NONAME ; unsigned int TSGEAudioConfig::SizeOfBufferDataType(void) const
+

@@ -1,0 +1,16 @@
+/*
+========================================================================
+ Name        : SGEAudioTester.l01
+ Author      : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_SGEAudioTesterApplication_1 ""
+#define STR_SGEAudioTesterApplication_2 ""
+#define STR_SGEAudioTesterApplication_3 ""
+#define STR_SGEAudioTesterApplication_4 "SGEAudioTester"
+#define STR_SGEAudioTesterApplication_5 "SGEAudioTester"
+#define STR_SGEAudioTesterApplication_8 "t2"
+#define STR_SGEAudioTesterApplication_6 "t1"

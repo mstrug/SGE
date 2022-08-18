@@ -1,0 +1,10 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : 
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+============================================================================
+*/
+
+#include "../sgeegl1/group/bld.inf"

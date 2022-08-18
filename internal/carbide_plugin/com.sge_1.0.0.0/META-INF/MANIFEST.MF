@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Name: SGE
+Bundle-Vendor: Michal Strug
+Bundle-ManifestVersion: 2
+Bundle-Localization: plugin
+Bundle-SymbolicName: com.sge.templates; singleton:=true
+Bundle-Version: 1.0.0.0
+Eclipse-LazyStart: true
+
+

@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+  Name        : bld.inf
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+
+#include "../SGEUtils/group/bld.inf"
+#include "../SGEFile/group/bld.inf"
+#include "../SGEBitmap/group/bld.inf"
+#include "../SGEFont/group/bld.inf"
+#include "../SGEString/group/bld.inf"
+#include "../SGEAudio/Audio/group/bld.inf"
+#include "../SGEEngine/group/bld.inf"
+#include "../SGEEgl/group/bld.inf"
+#include "../SGEGl/group/bld.inf"
+#include "../SGEApplication/group/bld.inf"
+#include "../SGESecurity/group/bld.inf"
+#include "../SGESensors/group/bld.inf"
+#include "../SGEVg/group/bld.inf"

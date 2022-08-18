@@ -1,0 +1,75 @@
+/*
+ ============================================================================
+  Name           : sgegametemplate.mmp
+  Author         : Michal Strug
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description    : 
+ ============================================================================
+ */
+
+#include "../inc/sgegametemplateuid.hrh"
+
+
+TARGET sgegametemplate.exe
+TARGETTYPE exe
+UID 0x100039CE _UID3
+VENDORID 0
+SECUREID _UID3
+
+
+SOURCEPATH        ../src
+SOURCE            SGEGameTemplate.cpp
+SOURCE            SGEGameTemplateApplication.cpp
+SOURCE            SGEGameTemplateEngineController.cpp 
+SOURCE            SGEGameTemplateEngine1.cpp
+SOURCE            SGEGameTemplateEngine2.cpp 
+SOURCE            SGEGameTemplateSettings.cpp 
+SOURCE            SGEGameTemplateCommonObjects.cpp
+
+
+SOURCEPATH        ../data
+
+START RESOURCE sgegametemplate.rss
+HEADER
+TARGET sgegametemplate
+TARGETPATH resource/apps
+END //RESOURCE
+
+START RESOURCE sgegametemplate_reg.rss
+TARGET sgegametemplate_reg
+TARGETPATH /private/10003a3f/apps
+END //RESOURCE
+
+START RESOURCE	SGEGameTemplateLang.rss
+HEADER
+TARGET SGEGameTemplateLang
+TARGETPATH ../../winscw/c/private/E1105DAb/lang
+END //RESOURCE
+
+
+
+USERINCLUDE	   ../inc
+SYSTEMINCLUDE      /epoc32/include
+SYSTEMINCLUDE      /epoc32/include/SGE
+
+
+LIBRARY		   euser.lib
+LIBRARY        fbscli.lib 
+LIBRARY		   SGEApplication.lib
+LIBRARY		   SGEEngine.lib
+LIBRARY		   SGEBitmap.lib
+LIBRARY		   SGEFile.lib
+LIBRARY		   SGEFont.lib
+LIBRARY		   SGEString.lib
+LIBRARY		   SGEAudio.lib
+
+//LIBRARY        fbscli.lib bitmaptransforms.lib imageconversion.lib estor.lib bafl.lib gdi.lib bitgdi.lib efsrv.lib cone.lib eikcore.lib estor.lib bafl.lib gdi.lib 
+ 
+LANG SC
+
+//CAPABILITY	  	  ReadUserData NetworkServices
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+

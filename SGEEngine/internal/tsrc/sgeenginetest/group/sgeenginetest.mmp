@@ -1,0 +1,58 @@
+/*
+============================================================================
+ Name		: sgeenginetest.mmp
+ Author	  	: Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description 	: 
+============================================================================
+*/
+
+
+TARGET			sgeenginetest.exe
+TARGETTYPE		exe
+UID		        0x100039CE 0xE22B5DB0
+
+SOURCEPATH		..\src
+SOURCE			sgeenginetest.cpp
+SOURCE			myapplication.cpp
+SOURCE			MyEngineController.cpp
+SOURCE			MyEngine.cpp
+
+
+SOURCEPATH		..\data
+
+START RESOURCE	sgeenginetest.rss
+HEADER
+TARGET sgeenginetest
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	sgeenginetest_reg.rss
+TARGET sgeenginetest_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+
+
+USERINCLUDE	   ..\inc
+
+SYSTEMINCLUDE	 \epoc32\include
+SYSTEMINCLUDE	 \epoc32\include\SGE
+SYSTEMINCLUDE	 \epoc32\include\SGE\SGEApplication
+SYSTEMINCLUDE	 \epoc32\include\SGE\SGEEngine
+
+LIBRARY		   SGEApplication.lib
+LIBRARY		   SGEEngine.lib
+LIBRARY		   euser.lib
+ 
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xE22B5DB0
+//CAPABILITY	  	  ReadUserData NetworkServices
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+

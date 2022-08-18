@@ -1,0 +1,20 @@
+// mmfSwCodecWrapperCustomInterfacesUIDs.hrh
+// Copyright (c) 2003 Symbian Ltd.  All rights reserved.
+//
+
+#ifndef __MMF_SWCODECWRAPPERCUSTOMINTERFACESUIDS_HRH__
+#define __MMF_SWCODECWRAPPERCUSTOMINTERFACESUIDS_HRH__
+
+//Custom Interface Uid for these Hw Device implementations
+#define KMmfPlaySettingsCustomInterface		0x101F9FC1
+#define KMmfRecordSettingsCustomInterface	0x101F9FC2
+
+//message from sw codec wrapper to hw device observer
+//to tell it to update the bytes played via its play settings
+//custom interface
+#define KMmfHwDeviceObserverUpdateBytesPlayed	0x101FE2A4
+
+//custom Interface Uid for TTaskConfig
+#define KUidRefDevSoundTaskConfig				0x1020428A
+
+#endif

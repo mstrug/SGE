@@ -1,0 +1,35 @@
+/*
+============================================================================
+ Name		: SGEFilePack.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is the project specification file for SGEFilePack.
+============================================================================
+*/
+
+TARGET		  SGEFilePack.exe
+TARGETTYPE	  exe
+UID			 0 0xEC00DBCD
+
+CAPABILITY AllFiles
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\SGE
+SYSTEMINCLUDE   \epoc32\include\SGE\SGEFile
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+SOURCEPATH	  ..\src
+SOURCE		  SGEFilePack.cpp
+
+LIBRARY		 euser.lib
+LIBRARY		 efsrv.lib
+LIBRARY		 SGEFile.lib
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif

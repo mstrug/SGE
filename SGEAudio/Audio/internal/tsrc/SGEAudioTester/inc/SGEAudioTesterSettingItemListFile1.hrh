@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : SGEAudioTesterSettingItemListFile1.hrh
+ Author      : ${author}
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+========================================================================
+*/
+enum TSGEAudioTesterSettingItemListFile1ViewCommands
+	{
+	ESGEAudioTesterSettingItemListFile1ViewMenuItem1Command = 0x6000
+	};
+enum TSGEAudioTesterSettingItemListFile1ViewItems
+	{
+	ESGEAudioTesterSettingItemListFile1ViewEnumeratedTextPopupFileName = 1,
+	ESGEAudioTesterSettingItemListFile1ViewSliderVolume,
+	ESGEAudioTesterSettingItemListFile1ViewEnumeratedTextPopupRepeat,
+	ESGEAudioTesterSettingItemListFile1ViewEnumeratedTextPopupKey
+	};

@@ -1,0 +1,45 @@
+/*
+ ============================================================================
+  Name        : SGEBitmap.mmp
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+TARGET            SGEBitmap_staticlib.lib
+TARGETTYPE        lib
+UID               0x1000008d 0x025EF715
+
+SOURCEPATH        ..\src
+SOURCE            SGEBitmapItem.cpp
+SOURCE            SGEBitmapProvider.cpp SGEBitmapUtils.cpp SGEBitmapSet.cpp SGEBitmapItemCreator.cpp SGEBitmapItemCreatorChild.cpp SGEBitmapLoader.cpp SGEBitmapTransparent.cpp
+
+
+USERINCLUDE       ..\inc
+SYSTEMINCLUDE     \epoc32\include 
+SYSTEMINCLUDE     \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+
+//LIBRARY           euser.lib fbscli.lib bitmaptransforms.lib efsrv.lib imageconversion.lib estor.lib bafl.lib gdi.lib bitgdi.lib
+
+//STATICLIBRARY SGEFile_staticLib.lib
+
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+
+CAPABILITY NetworkServices
+
+//OPTION GCC -Wno-invalid-offsetof
+//OPTION GCC -w
+
+EXPORTUNFROZEN
+

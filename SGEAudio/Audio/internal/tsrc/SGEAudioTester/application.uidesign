@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknApplication" version="1.1.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknDocument" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknViewAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUiBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneCaption" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.AvkonViewReference" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignReference" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.2.0</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_CONTAINER">SGEAudioTesterAppUi</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_APPLICATION_NAME">SGEAudioTester</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknApplication">
+    <property id="className">CSGEAudioTesterApplication</property>
+    <property id="documentBase">SGEAudioTester</property>
+    <property id="name">SGEAudioTesterApplication</property>
+    <property id="uid">0xE32B08C9</property>
+    <component id="com.nokia.sdt.series60.CAknDocument">
+      <property id="className">CSGEAudioTesterDocument</property>
+      <property id="name">SGEAudioTesterDocument</property>
+      <component id="com.nokia.sdt.series60.CAknViewAppUi">
+        <property id="initialDesign" type="componentRef">aknViewReference1</property>
+        <property id="className">CSGEAudioTesterAppUi</property>
+        <compoundProperty id="location">
+          <property id="x">51</property>
+          <property id="y">44</property>
+        </compoundProperty>
+        <property id="name">SGEAudioTesterAppUi</property>
+        <compoundProperty id="size">
+          <property id="width">240</property>
+          <property id="height">320</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.StatusPane">
+          <compoundProperty id="location">
+            <property id="x">20</property>
+          </compoundProperty>
+          <property id="name">statusPane</property>
+          <compoundProperty id="size">
+            <property id="width">204</property>
+            <property id="height">63</property>
+          </compoundProperty>
+          <component id="com.nokia.sdt.series60.StatusPaneCaption">
+            <property id="shortCaption" type="i18n">STR_SGEAudioTesterApplication_5</property>
+            <compoundProperty id="location">
+              <property id="x">56</property>
+            </compoundProperty>
+            <property id="longCaption" type="i18n">STR_SGEAudioTesterApplication_4</property>
+            <property id="name">caption</property>
+            <compoundProperty id="size">
+              <property id="width">148</property>
+              <property id="height">43</property>
+            </compoundProperty>
+          </component>
+        </component>
+        <component id="com.nokia.sdt.series60.CBA">
+          <compoundProperty id="location">
+            <property id="y">288</property>
+          </compoundProperty>
+          <compoundProperty id="info">
+            <property id="leftText" type="i18n">STR_SGEAudioTesterApplication_1</property>
+            <property id="rightText" type="i18n">STR_SGEAudioTesterApplication_2</property>
+            <property id="middleText" type="i18n">STR_SGEAudioTesterApplication_3</property>
+          </compoundProperty>
+          <property id="name">controlPane</property>
+          <compoundProperty id="size">
+            <property id="width">240</property>
+            <property id="height">32</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">SGEAudioTesterContainer.uidesign</property>
+          <compoundProperty id="tabImage"/>
+          <property id="baseName">SGEAudioTesterContainer</property>
+          <property id="name">aknViewReference1</property>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">SGEAudioTesterSettingItemList.uidesign</property>
+          <property id="inTabGroup">true</property>
+          <property id="baseName">SGEAudioTesterSettingItemList</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference2</property>
+          <property id="tabText" type="i18n">STR_SGEAudioTesterApplication_6</property>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">SGEAudioTesterSettingItemListFile1.uidesign</property>
+          <property id="inTabGroup">true</property>
+          <property id="baseName">SGEAudioTesterSettingItemListFile1</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference3</property>
+          <property id="tabText" type="i18n">STR_SGEAudioTesterApplication_8</property>
+        </component>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_English">
+      <string id="STR_SGEAudioTesterApplication_1"/>
+      <string id="STR_SGEAudioTesterApplication_2"/>
+      <string id="STR_SGEAudioTesterApplication_3"/>
+      <string id="STR_SGEAudioTesterApplication_4">SGEAudioTester</string>
+      <string id="STR_SGEAudioTesterApplication_5">SGEAudioTester</string>
+      <string id="STR_SGEAudioTesterApplication_6">t1</string>
+      <string id="STR_SGEAudioTesterApplication_8">t2</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="SGEAudioTesterAppUi">r_application_sgeaudio_tester_app_ui</resourceMapping>
+      <resourceMapping instanceName="aknViewReference1" rsrcId="tabText">r_application_akn_view_reference1</resourceMapping>
+      <resourceMapping instanceName="aknViewReference3" rsrcId="tabText">r_application_akn_view_reference3</resourceMapping>
+      <resourceMapping instanceName="aknViewReference2" rsrcId="tabText">r_application_akn_view_reference2</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_application_status_pane</resourceMapping>
+      <resourceMapping instanceName="SGEAudioTesterAppUi" rsrcId="localisable_app_info">r_localisable_app_info</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="aknViewReference1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">ESGEAudioTesterContainerViewId</enumMapping>
+      <enumMapping instanceName="aknViewReference3" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">ESGEAudioTesterSettingItemListFile1ViewId</enumMapping>
+      <enumMapping instanceName="aknViewReference2" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">ESGEAudioTesterSettingItemListViewId</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>inc/sgeaudiotestersettingitemlistview.h</file>
+    <file>src/sgeaudiotestersettingitemlistview.cpp</file>
+    <file>src/sgeaudiotesterdocument.cpp</file>
+    <file>src/sgeaudiotesterapplication.cpp</file>
+    <file>inc/sgeaudiotesterapplication.h</file>
+    <file>inc/sgeaudiotesterappui.h</file>
+    <file>src/sgeaudiotestercontainerview.cpp</file>
+    <file>src/sgeaudiotesterappui.cpp</file>
+    <file>inc/sgeaudiotestersettingitemlistfile1view.h</file>
+    <file>src/sgeaudiotestersettingitemlistfile1view.cpp</file>
+    <file>inc/sgeaudiotestercontainerview.h</file>
+    <file>inc/sgeaudiotesterdocument.h</file>
+    <file>data/sgeaudiotester.rss</file>
+    <file>inc/sgeaudiotester.hrh</file>
+    <file>data/sgeaudiotestercontainer.rssi</file>
+    <file>inc/sgeaudiotestercontainer.hrh</file>
+    <file>data/sgeaudiotestersettingitemlist.rssi</file>
+    <file>inc/sgeaudiotestersettingitemlist.hrh</file>
+    <file>data/sgeaudiotestersettingitemlistfile1.rssi</file>
+    <file>inc/sgeaudiotestersettingitemlistfile1.hrh</file>
+    <file>data/sgeaudiotester.loc</file>
+    <file>data/sgeaudiotester.l01</file>
+    <file>data/sgeaudiotestercontainer.loc</file>
+    <file>data/sgeaudiotestercontainer.l01</file>
+    <file>data/sgeaudiotestersettingitemlist.loc</file>
+    <file>data/sgeaudiotestersettingitemlist.l01</file>
+    <file>data/sgeaudiotestersettingitemlistfile1.loc</file>
+    <file>data/sgeaudiotestersettingitemlistfile1.l01</file>
+  </generatedFiles>
+</designerData>

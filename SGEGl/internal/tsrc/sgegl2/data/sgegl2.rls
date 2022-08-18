@@ -1,0 +1,20 @@
+/*
+============================================================================
+ Name		: sgeegl1.rls
+ Author	  : 
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is a localisation file for apptest
+				A .rls file is the one and only place where the logical
+				strings to be localised are defined. 
+============================================================================
+*/
+
+//  LOCALISATION STRINGS
+
+// Caption string for app.
+#define qtn_caption_string "egl1"
+
+// Third item in "Options" menu pane
+#define qtn_exit "Exit"
+
+// End of File

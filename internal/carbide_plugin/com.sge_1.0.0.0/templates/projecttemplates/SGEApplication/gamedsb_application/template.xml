@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE template [
+<!ENTITY projectDirsPageCommonFields SYSTEM "../../../shared/projectDirsPageCommonFields.inc">
+<!ENTITY projectCreateAndCommonFoldersProcess SYSTEM "../../../shared/projectCreateAndCommonFoldersProcess.inc">
+<!ENTITY projectCommonFilesProcessParams2x SYSTEM "../../../shared/projectCommonFilesProcessParams2x.inc">
+]>
+<template 
+		version="1.0" 
+		label="%template.label">
+	<description>%template.desc</description>
+	<wizardPage 
+		id="basics" 
+		label="%basics.label">
+		<description>%basics.desc</description>
+		<uidField 
+				id="uid3"
+				label="%basics.uid3.label"
+				min="0x01000000"
+				max="0x0fffffff"
+				mandatory="true"
+				persist="true">
+				<description>%basics.uid3.desc</description>
+		</uidField>
+		<textField 
+				id="author"
+				label="%basics.author.label"
+				persist="true">
+				<description>%basics.author.desc</description>
+		</textField>
+		<textField 
+				id="company"
+				label="%basics.company.label"
+				persist="true">
+				<description>%basics.company.desc</description>
+		</textField>
+		<textField 
+				id="version"
+				label="%basics.version.label"
+				default="1.0.0"
+				persist="true">
+				<description>%basics.version.desc</description>
+		</textField>
+		<textField 
+				id="copyright"
+				label="%basics.copyright.label"
+				multiline="true"
+				default="Your copyright notice"
+				persist="true">
+				<description>%basics.copyright.desc</description>
+		</textField>
+	</wizardPage>
+
+	<wizardPage id="directories" label="%directories.label">
+
+		&projectDirsPageCommonFields;
+
+		<filenameField 
+				id="gfxDir"
+				label="%directories.gfxDir.label"
+				default="gfx"
+				mandatory="true"
+				persist="true">
+				<description>%directories.gfxDir.desc</description>
+		</filenameField>
+		<filenameField 
+				id="sfxDir"
+				label="%directories.sfxDir.label"
+				default="sfx"
+				mandatory="true"
+				persist="true">
+				<description>%directories.sfxDir.desc</description>
+		</filenameField>
+
+	</wizardPage>
+	
+	&projectCreateAndCommonFoldersProcess;	
+
+	<process class="com.nokia.carbide.templatewizard.processes.CreateFolders"
+	 	bundle="com.nokia.carbide.templatewizard">
+		<parameter name="project" projectName="$(projectName)" />
+		<parameter name="folder" path="$(gfxDir)" /> 
+		<parameter name="folder" path="$(gfxDir)/icon" /> 
+		<parameter name="folder" path="$(sfxDir)" /> 
+	</process>
+
+	<process class="com.nokia.carbide.templatewizard.processes.CopyFiles"
+	 	bundle="com.nokia.carbide.templatewizard">
+                <parameter name="project" projectName="$(projectName)" />
+
+		<!-- GROUP -->
+		<parameter name="file"
+			sourcePath="group/bld.inf" 
+			targetPath="$(groupDir)/bld.inf" 
+			/> 
+		<parameter name="file"
+			sourcePath="group/Basename.mmp" 
+			targetPath="$(groupDir)/$(baseName).mmp" 
+			/> 
+		<parameter name="file"
+			sourcePath="group/Icons_scalable_dc.mk" 
+			targetPath="$(groupDir)/Icons_scalable_dc.mk" 
+			/> 
+
+		<!-- DATA -->
+		<parameter name="file"
+			sourcePath="data/Basename.rls" 
+			targetPath="$(dataDir)/$(baseName).rls" 
+			/> 
+		<parameter name="file"
+			sourcePath="data/Basename.rss" 
+			targetPath="$(dataDir)/$(baseName).rss" 
+			/> 
+		<parameter name="file"
+			sourcePath="data/Basename_reg.rss" 
+			targetPath="$(dataDir)/$(baseName)_reg.rss" 
+			/> 
+
+		<!-- GFX -->
+		<parameter name="file"
+			sourcePath="gfx/icon/icon.svg" 
+			targetPath="$(gfxDir)/icon/icon.svg" 
+			/> 
+	
+		<!-- SIS -->
+		<parameter name="file"
+			sourcePath="sis/Basename.pkg" 
+			targetPath="$(sisDir)/$(baseName)_S60_3_X_v_1_0_0.pkg" 
+			/> 
+		<parameter name="file"
+			sourcePath="sis/backup_registration.xml" 
+			targetPath="$(sisDir)/backup_registration.xml" 
+			/> 
+	</process>
+
+	<process class="com.nokia.carbide.cpp.project.core.processes.CopyFilesAndFormatAsCpp"
+		bundle="com.nokia.carbide.cpp.project.core">
+		<parameter name="project" projectName="$(projectName)" />			
+			
+		<!-- INC -->
+		<parameter name="file"
+			sourcePath="inc/BasenameApplication.h" 
+			targetPath="$(incDir)/$(baseName)Application.h" 
+			/> 
+
+		<!-- SRC -->
+		<parameter name="file"
+			sourcePath="src/BasenameApplication.cpp" 
+			targetPath="$(sourceDir)/$(baseName)Application.cpp" 
+			/> 
+		<parameter name="file"
+			sourcePath="src/Basename.cpp" 
+			targetPath="$(sourceDir)/$(baseName).cpp" 
+			/> 
+	</process>
+
+	<process class="com.nokia.carbide.cpp.project.ui.processes.ProjectCreatedTasks"
+	 	bundle="com.nokia.carbide.cpp.project.ui">
+		<parameter name="project" projectName="$(projectName)"
+			bldInfPath="$(groupDir)/bld.inf"
+			targetMMPFileName="$(baseName).mmp" 
+			pkgFilePath="$(sisDir)/$(baseName)_S60_3_X_v_1_0_0.pkg" /> 
+	</process>
+
+</template>

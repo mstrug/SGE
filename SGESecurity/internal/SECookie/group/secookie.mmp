@@ -1,0 +1,36 @@
+/*
+============================================================================
+ Name		: secookie.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+============================================================================
+*/
+
+TARGET		  secookie.exe
+TARGETTYPE	  exe
+UID			 0 0xEF4c5a17
+
+USERINCLUDE  ..\inc
+USERINCLUDE   ..\..\..\inc
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+SOURCEPATH	  ..\src
+SOURCE		  secookie.cpp
+
+LIBRARY		 euser.lib
+LIBRARY      efsrv.lib 
+LIBRARY      estor.lib 
+LIBRARY      caf.lib 
+LIBRARY      random.lib 
+LIBRARY      SGESecurity_staticlib.lib 
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif

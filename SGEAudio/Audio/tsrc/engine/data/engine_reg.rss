@@ -1,0 +1,25 @@
+/*
+============================================================================
+ Name		: engine.rss
+ Author	  : 
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This file contains the application registration resource.
+============================================================================
+*/
+
+
+#include <appinfo.rh>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0xEF4D531a
+
+
+RESOURCE APP_REGISTRATION_INFO
+	{
+	app_file = "tengine";
+	group_name="Dev";
+
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+	}
+

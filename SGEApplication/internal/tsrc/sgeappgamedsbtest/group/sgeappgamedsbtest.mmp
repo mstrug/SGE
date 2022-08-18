@@ -1,0 +1,63 @@
+/*
+============================================================================
+ Name		: sgeappgamedsbtest.mmp
+ Author	  	: Michal Strug
+ Copyright      : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description 	: 
+============================================================================
+*/
+
+
+TARGET			sgeappgamedsbtest.exe
+TARGETTYPE		exe
+UID		        0x100039CE 0xE22B5DAe
+
+SOURCEPATH		..\src
+SOURCE			sgeappgamedsbtest.cpp
+SOURCE			myapplication.cpp
+
+
+
+
+
+SOURCEPATH		..\data
+
+START RESOURCE	sgeappgamedsbtest.rss
+HEADER
+TARGET sgeappgamedsbtest
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	sgeappgamedsbtest_reg.rss
+TARGET sgeappgamedsbtest_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+
+
+
+USERINCLUDE	   ..\inc
+
+SYSTEMINCLUDE	 \epoc32\include
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+SYSTEMINCLUDE	 \epoc32\include\SGE
+SYSTEMINCLUDE	 \epoc32\include\SGE\SGEApplication
+
+LIBRARY		   SGEApplication.lib
+LIBRARY		   euser.lib
+ 
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xE22B5DAe
+//CAPABILITY	  	  ReadUserData NetworkServices
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+

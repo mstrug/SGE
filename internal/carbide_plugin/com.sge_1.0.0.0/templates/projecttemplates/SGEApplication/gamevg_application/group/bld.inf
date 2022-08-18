@@ -1,0 +1,21 @@
+/*
+ ============================================================================
+  Name        : bld.inf
+  Author      : $(author)
+  Company     : $(company)
+  Version     : $(version)
+  Copyright   : $(copyright)
+  Description : This file provides the information required for building the
+                whole of a $(baseName).
+ ============================================================================
+ */
+
+
+PRJ_PLATFORMS
+WINSCW GCCE
+
+
+PRJ_MMPFILES
+gnumakefile icons_scalable_dc.mk
+$(baseName).mmp
+

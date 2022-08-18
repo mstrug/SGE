@@ -1,0 +1,26 @@
+/*
+ ============================================================================
+  Name        : bld.inf
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../inc/SGEObjectInterfaces.h 		 SGE/SGEEngine/SGEObjectInterfaces.h
+../inc/SGEEngineController.h 		 SGE/SGEEngine/SGEEngineController.h
+../inc/SGEEngineControllerObserver.h SGE/SGEEngine/SGEEngineControllerObserver.h
+../inc/SGEEngine.h 			         SGE/SGEEngine/SGEEngine.h
+../inc/SGEEngineObserver.h           SGE/SGEEngine/SGEEngineObserver.h
+../inc/SGEEngineCommonObjects.h      SGE/SGEEngine/SGEEngineCommonObjects.h
+../inc/SGEEngineRenderer.h           SGE/SGEEngine/SGEEngineRenderer.h
+
+PRJ_MMPFILES
+SGEEngine.mmp
+SGEEngine_staticlib.mmp

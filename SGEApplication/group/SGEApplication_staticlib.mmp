@@ -1,0 +1,57 @@
+/*
+ ============================================================================
+  Name        : SGEApplication_staticlib.mmp
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+TARGET            SGEApplication_staticlib.lib
+TARGETTYPE        lib
+UID               0x1000008d 0x025EF7A0
+
+SOURCEPATH        ..\src
+SOURCE            SGESystemApplication.cpp
+SOURCE            SGESystemDocument.cpp
+SOURCE            SGESystemAppUi.cpp
+SOURCE            SGESystemAppView.cpp
+SOURCE            SGEApplication.cpp
+SOURCE            SGEGameAppUi.cpp
+SOURCE            SGEGameApplication.cpp 
+SOURCE            SGEGameAppViewDS.cpp
+SOURCE            SGEGameAppViewDSB.cpp
+SOURCE            SGEGameAppViewGL.cpp
+SOURCE            SGEGameAppViewVG.cpp
+SOURCE            SGEGameAppDSB.cpp
+SOURCE            SGEGameApplicationDS.cpp 
+SOURCE            SGEGameApplicationDSB.cpp 
+SOURCE            SGEGameApplicationGL.cpp 
+SOURCE            SGEGameApplicationVG.cpp 
+
+
+USERINCLUDE       ..\inc
+SYSTEMINCLUDE     \epoc32\include 
+SYSTEMINCLUDE     \epoc32\include\SGE
+SYSTEMINCLUDE     \epoc32\include\SGE\SGEApplication
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+
+CAPABILITY NetworkServices
+
+//OPTION GCC -Wno-invalid-offsetof
+//OPTION GCC -w
+
+EXPORTUNFROZEN
+
+// STATICLIBRARY SGEEgl_staticLib.lib

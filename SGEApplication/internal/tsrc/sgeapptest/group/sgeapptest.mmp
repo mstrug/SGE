@@ -1,0 +1,56 @@
+/*
+============================================================================
+ Name		: sgeapptest.mmp
+ Author	  	: Michal Strug
+ Copyright      : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description 	: 
+============================================================================
+*/
+
+
+TARGET			sgeapptest.exe
+TARGETTYPE		exe
+UID		        0x100039CE 0xE22B5DAa
+
+SOURCEPATH		..\src
+SOURCE			sgeapptest.cpp
+SOURCE			myapplication.cpp
+
+SOURCEPATH		..\data
+
+START RESOURCE	sgeapptest.rss
+HEADER
+TARGET sgeapptest
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	sgeapptest_reg.rss
+TARGET sgeapptest_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+USERINCLUDE	   ..\inc
+
+SYSTEMINCLUDE	 \epoc32\include
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+SYSTEMINCLUDE	 \epoc32\include\SGE
+SYSTEMINCLUDE	 \epoc32\include\SGE\SGEApplication
+
+LIBRARY            eikcore.lib avkon.lib apparc.lib cone.lib euser.lib estor.lib efsrv.lib bafl.lib ws32.lib bitgdi.lib fbscli.lib hal.lib libgles_cm.lib scdv.lib RemConCoreApi.lib RemConInterfaceBase.lib
+STATICLIBRARY      SGEApplication_staticlib.lib
+
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xE22B5DAa
+//CAPABILITY	  	  ReadUserData NetworkServices
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+

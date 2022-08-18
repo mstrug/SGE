@@ -1,0 +1,49 @@
+; Installation file for Digdug application
+;
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"SGEGameTemplate"}, (0xE1105DAb), 1,0,0,TYPE = SA
+
+;Localised Vendor name
+%{"Michal Strug"}
+
+;Unique Vendor name
+:"Michal Strug"
+
+;Supports Series 60 v 3.0, 3.1, 3.2, 5.0
+[0x101F7961], 0, 0, 0, {"S60ProductID"}		   ; 3.x
+;[0x102032BE], 0, 0, 0, {"S60ProductID"}	   ; 3.1
+;[0x102752AE], 0, 0, 0, {"S60ProductID"}	   ; 3.2
+;[0x1028315F], 0, 0, 0, {"Series60ProductID"}  ; 5.x
+
+;Files to install
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\SGEGameTemplate.exe"       -"!:\sys\bin\SGEGameTemplate.exe"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\SGEApplication.dll"        -"!:\sys\bin\SGEApplication.dll"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\SGEEngine.dll"             -"!:\sys\bin\SGEEngine.dll"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\SGEBitmap.dll"             -"!:\sys\bin\SGEBitmap.dll"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\SGEFile.dll"               -"!:\sys\bin\SGEFile.dll"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\SGEFont.dll"               -"!:\sys\bin\SGEFont.dll"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\SGEString.dll"             -"!:\sys\bin\SGEString.dll"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\SGEAudio.dll"              -"!:\sys\bin\SGEAudio.dll"
+
+"$(EPOCROOT)Epoc32\data\z\resource\apps\SGEGameTemplate.rsc"			    -"!:\resource\apps\SGEGameTemplate.rsc"
+"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\SGEGameTemplate_reg.rsc"	-"!:\private\10003a3f\import\apps\SGEGameTemplate_reg.rsc"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\SGEGameTemplate.mif" 			    -"!:\resource\apps\SGEGameTemplate.mif"
+
+"$(EPOCROOT)Epoc32\winscw\c\private\E1105DAb\test.gif"				        -"!:\private\E1105DAb\test.gif"
+"$(EPOCROOT)Epoc32\winscw\c\private\E1105DAb\test.sge"				        -"!:\private\E1105DAb\test.sge"
+"$(EPOCROOT)Epoc32\winscw\c\private\E1105DAb\test.wav"			           	-"!:\private\E1105DAb\test.wav"
+"$(EPOCROOT)Epoc32\winscw\c\private\E1105DAb\font1.png"                     -"!:\private\E1105DAb\font1.png"
+"$(EPOCROOT)Epoc32\winscw\c\private\E1105DAb\gdrfonts\JFRocSol18.gdr"       -"!:\private\E1105DAb\gdrfonts\JFRocSol18.gdr"
+"$(EPOCROOT)Epoc32\winscw\c\private\E1105DAb\lang\SGEGameTemplateLang.rsc"	-"!:\private\E1105DAb\lang\SGEGameTemplateLang.rsc"
+
+"..\sis\backup_registration.xml"		                                    -"!:\private\E1105DAb\backup_registration.xml"
+

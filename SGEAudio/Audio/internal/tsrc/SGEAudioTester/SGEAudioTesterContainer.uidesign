@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknView" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitle" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NaviText" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NaviBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControl" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikLabel" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBar" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItemBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StandardNote" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.2.0</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknView">
+    <property id="className">CSGEAudioTesterContainerView</property>
+    <compoundProperty id="location">
+      <property id="x">51</property>
+      <property id="y">44</property>
+    </compoundProperty>
+    <property id="optionsMenu" type="componentRef">optionsMenu</property>
+    <property id="name">SGEAudioTesterContainerView</property>
+    <compoundProperty id="size">
+      <property id="width">240</property>
+      <property id="height">320</property>
+    </compoundProperty>
+    <component id="com.nokia.sdt.series60.StatusPane">
+      <compoundProperty id="location">
+        <property id="x">20</property>
+      </compoundProperty>
+      <property id="name">statusPane</property>
+      <compoundProperty id="size">
+        <property id="width">204</property>
+        <property id="height">63</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.StatusPaneTitle">
+        <compoundProperty id="location">
+          <property id="x">56</property>
+        </compoundProperty>
+        <property id="name">title</property>
+        <property id="titleText" type="i18n">STR_SGEAudioTesterContainerView_4</property>
+        <compoundProperty id="size">
+          <property id="width">148</property>
+          <property id="height">43</property>
+        </compoundProperty>
+        <compoundProperty id="image"/>
+      </component>
+      <component id="com.nokia.sdt.series60.NaviText">
+        <compoundProperty id="location">
+          <property id="x">60</property>
+          <property id="y">43</property>
+        </compoundProperty>
+        <property id="name">naviText</property>
+        <property id="text" type="i18n">STR_SGEAudioTesterContainerView_9</property>
+        <compoundProperty id="size">
+          <property id="width">144</property>
+          <property id="height">20</property>
+        </compoundProperty>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CBA">
+      <compoundProperty id="location">
+        <property id="y">288</property>
+      </compoundProperty>
+      <compoundProperty id="info">
+        <property id="leftText" type="i18n">STR_SGEAudioTesterContainerView_1</property>
+        <property id="rightText" type="i18n">STR_SGEAudioTesterContainerView_2</property>
+        <property id="middleText" type="i18n">STR_SGEAudioTesterContainerView_3</property>
+        <property id="type">CUSTOM</property>
+        <property id="middleId">UNIQUE</property>
+      </compoundProperty>
+      <property id="name">controlPane</property>
+      <compoundProperty id="size">
+        <property id="width">240</property>
+        <property id="height">32</property>
+      </compoundProperty>
+      <eventBinding id="middleSoftKeyPressed" handlerDisplay="HandleControlPaneMiddleSoftKeyPressedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleControlPaneMiddleSoftKeyPressedL(TInt))"/>
+    </component>
+    <component id="com.nokia.sdt.series60.CCoeControl">
+      <compoundProperty id="location">
+        <property id="y">66</property>
+      </compoundProperty>
+      <property id="className">CSGEAudioTesterContainer</property>
+      <property id="name">SGEAudioTesterContainer</property>
+      <compoundProperty id="size">
+        <property id="width">240</property>
+        <property id="height">222</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.CEikLabel">
+        <compoundProperty id="location">
+          <property id="x">1</property>
+          <property id="y">1</property>
+        </compoundProperty>
+        <property id="font">standard.AnnotationFont</property>
+        <property id="name">labelTrack1</property>
+        <property id="text" type="i18n">STR_SGEAudioTesterContainerView_13</property>
+        <property id="alignment">EEikLabelAlignHLeft</property>
+        <compoundProperty id="size">
+          <property id="width">215</property>
+          <property id="height">68</property>
+        </compoundProperty>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.MenuBar">
+      <compoundProperty id="location">
+        <property id="x">6</property>
+        <property id="y">131</property>
+      </compoundProperty>
+      <property id="name">optionsMenu</property>
+      <compoundProperty id="size">
+        <property id="height">157</property>
+        <property id="width">228</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.MenuPane">
+        <compoundProperty id="location"/>
+        <property id="name">menuPane1</property>
+        <compoundProperty id="size">
+          <property id="height">157</property>
+          <property id="width">228</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">2</property>
+          </compoundProperty>
+          <property id="name">About_MenuItem</property>
+          <property id="text" type="i18n">STR_SGEAudioTesterContainerView_23</property>
+          <compoundProperty id="size">
+            <property id="width">213</property>
+            <property id="height">28</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleAbout_MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleAbout_MenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">32</property>
+          </compoundProperty>
+          <property id="name">settingsMenuItem</property>
+          <property id="text" type="i18n">STR_SGEAudioTesterContainerView_5</property>
+          <compoundProperty id="size">
+            <property id="width">213</property>
+            <property id="height">28</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleSettingsMenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleSettingsMenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">62</property>
+          </compoundProperty>
+          <property id="name">filesMenuItem</property>
+          <property id="text" type="i18n">STR_SGEAudioTesterContainerView_6</property>
+          <compoundProperty id="size">
+            <property id="width">213</property>
+            <property id="height">28</property>
+          </compoundProperty>
+          <component id="com.nokia.sdt.series60.MenuPane">
+            <compoundProperty id="location">
+              <property id="x">213</property>
+            </compoundProperty>
+            <property id="name">menuPane2</property>
+            <compoundProperty id="size"/>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">2</property>
+              </compoundProperty>
+              <property id="name">file_1MenuItem</property>
+              <property id="text" type="i18n">STR_SGEAudioTesterContainerView_10</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleFile_1MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleFile_1MenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">4</property>
+              </compoundProperty>
+              <property id="name">file_2MenuItem</property>
+              <property id="text" type="i18n">STR_SGEAudioTesterContainerView_11</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleFile_1MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleFile_1MenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">6</property>
+              </compoundProperty>
+              <property id="name">file_3MenuItem</property>
+              <property id="text" type="i18n">STR_SGEAudioTesterContainerView_12</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleFile_1MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleFile_1MenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">8</property>
+              </compoundProperty>
+              <property id="name">file_4MenuItem</property>
+              <property id="text" type="i18n">STR_SGEAudioTesterContainerView_14</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleFile_1MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleFile_1MenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">10</property>
+              </compoundProperty>
+              <property id="name">file_5MenuItem</property>
+              <property id="text" type="i18n">STR_SGEAudioTesterContainerView_15</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleFile_1MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleFile_1MenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">12</property>
+              </compoundProperty>
+              <property id="name">file_6MenuItem</property>
+              <property id="text" type="i18n">STR_SGEAudioTesterContainerView_16</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleFile_1MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleFile_1MenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">14</property>
+              </compoundProperty>
+              <property id="name">file_7MenuItem</property>
+              <property id="text" type="i18n">STR_SGEAudioTesterContainerView_17</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleFile_1MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleFile_1MenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">16</property>
+              </compoundProperty>
+              <property id="name">file_8MenuItem</property>
+              <property id="text" type="i18n">STR_SGEAudioTesterContainerView_18</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleFile_1MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleFile_1MenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">18</property>
+              </compoundProperty>
+              <property id="name">file_9MenuItem</property>
+              <property id="text" type="i18n">STR_SGEAudioTesterContainerView_19</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleFile_1MenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleFile_1MenuItemSelectedL(TInt))"/>
+            </component>
+          </component>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">92</property>
+          </compoundProperty>
+          <property id="name">initializeMenuItem</property>
+          <property id="text" type="i18n">STR_SGEAudioTesterContainerView_7</property>
+          <compoundProperty id="size">
+            <property id="width">213</property>
+            <property id="height">28</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleInitializeMenuItemSelectedL" handlerSymbol="cpp@src//SGEAudioTesterContainerView.cpp/function(CSGEAudioTesterContainerView::HandleInitializeMenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">122</property>
+          </compoundProperty>
+          <property id="name">exitMenuItem</property>
+          <property id="text" type="i18n">STR_SGEAudioTesterContainerView_8</property>
+          <property id="command">EAknCmdExit</property>
+          <compoundProperty id="size">
+            <property id="width">213</property>
+            <property id="height">28</property>
+          </compoundProperty>
+        </component>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.StandardNote">
+      <property id="type">CAknInformationNote</property>
+      <compoundProperty id="location">
+        <property id="x">8</property>
+        <property id="y">168</property>
+      </compoundProperty>
+      <property id="name">noteAbout</property>
+      <property id="text" type="i18n">STR_SGEAudioTesterContainerView_20</property>
+      <compoundProperty id="size">
+        <property id="width">227</property>
+        <property id="height">117</property>
+      </compoundProperty>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_English">
+      <string id="STR_SGEAudioTesterContainerView_4">Audio Tester</string>
+      <string id="STR_SGEAudioTesterContainerView_5">Config</string>
+      <string id="STR_SGEAudioTesterContainerView_7">Start</string>
+      <string id="STR_SGEAudioTesterContainerView_8">Exit</string>
+      <string id="STR_SGEAudioTesterContainerView_9">Status: Stopped</string>
+      <string id="STR_SGEAudioTesterContainerView_1">Options</string>
+      <string id="STR_SGEAudioTesterContainerView_2">Exit</string>
+      <string id="STR_SGEAudioTesterContainerView_3">Start</string>
+      <string id="STR_SGEAudioTesterContainerView_6">Files</string>
+      <string id="STR_SGEAudioTesterContainerView_10">File 1</string>
+      <string id="STR_SGEAudioTesterContainerView_11">File 2</string>
+      <string id="STR_SGEAudioTesterContainerView_12">File 3</string>
+      <string id="STR_SGEAudioTesterContainerView_14">File 4</string>
+      <string id="STR_SGEAudioTesterContainerView_15">File 5</string>
+      <string id="STR_SGEAudioTesterContainerView_16">File 6</string>
+      <string id="STR_SGEAudioTesterContainerView_17">File 7</string>
+      <string id="STR_SGEAudioTesterContainerView_18">File 8</string>
+      <string id="STR_SGEAudioTesterContainerView_19">File 9</string>
+      <string id="STR_SGEAudioTesterContainerView_20">AudioTester\nv0.1\nMichal Strug 2010\nwww.mbr-team.net</string>
+      <string id="STR_SGEAudioTesterContainerView_23">About</string>
+      <string id="STR_SGEAudioTesterContainerView_13">label</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="statusPane">r_sgeaudio_tester_container_status_pane</resourceMapping>
+      <resourceMapping instanceName="SGEAudioTesterContainerView">r_sgeaudio_tester_container_sgeaudio_tester_container_view</resourceMapping>
+      <resourceMapping instanceName="controlPane">r_sgeaudio_tester_container_control_pane</resourceMapping>
+      <resourceMapping instanceName="menuPane2">r_sgeaudio_tester_container_menu_pane2</resourceMapping>
+      <resourceMapping instanceName="menuPane1">r_sgeaudio_tester_container_menu_pane1_menu_pane</resourceMapping>
+      <resourceMapping instanceName="noteAbout">r_sgeaudio_tester_container_note_about</resourceMapping>
+      <resourceMapping instanceName="optionsMenu">r_sgeaudio_tester_container_options_menu</resourceMapping>
+      <resourceMapping instanceName="labelTrack1">r_sgeaudio_tester_container_label_track1</resourceMapping>
+      <resourceMapping instanceName="title">r_sgeaudio_tester_container_title_resource</resourceMapping>
+      <resourceMapping instanceName="naviText">r_sgeaudio_tester_container_navi_text_resource</resourceMapping>
+      <resourceMapping instanceName="naviText" rsrcId="text">r_sgeaudio_tester_container_navi_text</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="file_4MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewFile_4MenuItemCommand</enumMapping>
+      <enumMapping instanceName="labelTrack1" propertyId="font">EEikLabelFontAnnotation</enumMapping>
+      <enumMapping instanceName="labelTrack1" propertyId="alignment">EEikLabelAlignHLeft</enumMapping>
+      <enumMapping instanceName="file_6MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewFile_6MenuItemCommand</enumMapping>
+      <enumMapping instanceName="controlPane" propertyId="leftId" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EAknSoftkeyOptions</enumMapping>
+      <enumMapping instanceName="naviText" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtNaviPane</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidTitle</enumMapping>
+      <enumMapping instanceName="file_9MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewFile_9MenuItemCommand</enumMapping>
+      <enumMapping instanceName="settingsMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewSettingsMenuItemCommand</enumMapping>
+      <enumMapping instanceName="file_3MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewFile_3MenuItemCommand</enumMapping>
+      <enumMapping instanceName="controlPane" propertyId="middleId" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewControlPaneMiddleId2</enumMapping>
+      <enumMapping instanceName="file_1MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewFile_1MenuItemCommand</enumMapping>
+      <enumMapping instanceName="About_MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewAbout_MenuItemCommand</enumMapping>
+      <enumMapping instanceName="naviText" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidNavi</enumMapping>
+      <enumMapping instanceName="file_5MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewFile_5MenuItemCommand</enumMapping>
+      <enumMapping instanceName="file_7MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewFile_7MenuItemCommand</enumMapping>
+      <enumMapping instanceName="controlPane" propertyId="rightId" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EAknSoftkeyExit</enumMapping>
+      <enumMapping instanceName="exitMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EAknCmdExit</enumMapping>
+      <enumMapping instanceName="file_2MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewFile_2MenuItemCommand</enumMapping>
+      <enumMapping instanceName="file_8MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewFile_8MenuItemCommand</enumMapping>
+      <enumMapping instanceName="initializeMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterContainerViewInitializeMenuItemCommand</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtTitlePane</enumMapping>
+      <enumMapping instanceName="SGEAudioTesterContainerView" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">ESGEAudioTesterContainerViewId</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>inc/sgeaudiotestercontainer.h</file>
+    <file>src/sgeaudiotestercontainerview.cpp</file>
+    <file>inc/sgeaudiotestercontainerview.h</file>
+    <file>src/sgeaudiotestercontainer.cpp</file>
+    <file>data/sgeaudiotester.rss</file>
+    <file>data/sgeaudiotestercontainer.rssi</file>
+    <file>inc/sgeaudiotester.hrh</file>
+    <file>inc/sgeaudiotestercontainer.hrh</file>
+    <file>data/sgeaudiotestersettingitemlist.rssi</file>
+    <file>inc/sgeaudiotestersettingitemlist.hrh</file>
+    <file>data/sgeaudiotestersettingitemlistfile1.rssi</file>
+    <file>inc/sgeaudiotestersettingitemlistfile1.hrh</file>
+    <file>data/sgeaudiotester.loc</file>
+    <file>data/sgeaudiotester.l01</file>
+    <file>data/sgeaudiotestercontainer.loc</file>
+    <file>data/sgeaudiotestercontainer.l01</file>
+    <file>data/sgeaudiotestersettingitemlist.loc</file>
+    <file>data/sgeaudiotestersettingitemlist.l01</file>
+    <file>data/sgeaudiotestersettingitemlistfile1.loc</file>
+    <file>data/sgeaudiotestersettingitemlistfile1.l01</file>
+  </generatedFiles>
+</designerData>

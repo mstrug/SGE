@@ -1,0 +1,89 @@
+/*
+ ============================================================================
+  Name	      : sgeEglLog.mmp
+  Author      : 
+  Company     : 
+  Version     : 1.0.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : This is the project specification file for sgeEglLog.
+ ============================================================================
+ */
+
+TARGET sgeEglLog.exe
+TARGETTYPE exe
+
+UID 0x100039CE 0xE6FE9B1A
+VENDORID 0
+SECUREID 0xE6FE9B1A
+
+EPOCHEAPSIZE 0x500000 0x4F00000
+
+LANG SC
+
+CAPABILITY ReadUserData 
+// SurroundingsDS
+SOURCEPATH     ..\src
+SOURCE         sgeEglLog.cpp
+SOURCE         sgeEglLogApplication.cpp 
+
+SOURCEPATH     ..\data
+START RESOURCE sgeEglLog.rss
+HEADER
+TARGET sgeEglLog
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE sgeEglLog_reg.rss
+TARGET sgeEglLog_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+USERINCLUDE    ..\inc
+SYSTEMINCLUDE  \epoc32\include
+SYSTEMINCLUDE  \epoc32\include\SGE
+SYSTEMINCLUDE  \epoc32\include\SGE\SGEApplication
+SYSTEMINCLUDE    \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\SGE\SGEApplication
+SYSTEMINCLUDE    \epoc32\include\SGE\SGEEgl
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+
+//LIBRARY        libgles_cm.lib
+LIBRARY        euser.lib ws32.lib
+LIBRARY        libegl.lib
+LIBRARY        libopenvg.lib
+
+STATICLIBRARY          SGEApplication_staticlib.lib
+STATICLIBRARY          SGEEgl_staticlib.lib
+
+
+LIBRARY           eikcore.lib 
+LIBRARY           avkon.lib
+LIBRARY           apparc.lib
+LIBRARY           cone.lib
+LIBRARY           estor.lib 
+LIBRARY           efsrv.lib 
+LIBRARY           bafl.lib
+LIBRARY           fbscli.lib 
+LIBRARY           hal.lib 
+LIBRARY           scdv.lib
+LIBRARY           fntstr.lib
+LIBRARY           bitmaptransforms.lib imageconversion.lib gdi.lib bitgdi.lib
+LIBRARY           mediaclientaudio.lib ecom.lib centralrepository.lib
+LIBRARY           mediaclientaudiostream.lib mmfdevsound.lib mmfserverbaseclasses.lib 
+LIBRARY           RemConCoreApi.lib RemConInterfaceBase.lib
+LIBRARY           sensrvclient.lib sensrvutil.lib 
+LIBRARY           sysutil.lib caf.lib
+LIBRARY           goommonitor.lib
+
+ 
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+

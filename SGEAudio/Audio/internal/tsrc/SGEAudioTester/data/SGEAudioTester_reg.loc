@@ -1,0 +1,11 @@
+//  LOCALISATION STRINGS
+
+// Caption string for app.
+#define qtn_caption_string "AudioTester"
+
+// Short caption string for app.
+#define qtn_short_caption_string "AT"
+
+#define qtn_loc_resource_file_1 "\\resource\\apps\\SGEAudioTester"
+
+// End of File

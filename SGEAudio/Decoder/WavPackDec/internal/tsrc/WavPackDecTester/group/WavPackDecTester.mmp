@@ -1,0 +1,27 @@
+/*
+============================================================================
+ Name		: wavPackDecTester.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is the project specification file for wavPakDec.
+============================================================================
+*/
+
+TARGET		  WavPackDecTester.exe
+TARGETTYPE	  exe
+UID			 0 0xE9E460D5
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+
+SOURCE wavPackDec.cpp
+
+
+LIBRARY		euser.lib
+LIBRARY		efsrv.lib
+//LIBRARY 	SGEAudioWavPackDec.lib
+STATICLIBRARY 	SGEAudioWavPackDec_staticlib.lib
+STATICLIBRARY gcc_idiv.lib
+

@@ -1,0 +1,1 @@
+c:\S60\devices\S60_3rd_FP2_SDK\epoc32\release\winscw\udeb\SGEFilePack.exe -dtextshell -- -l c:\private\E1105DAb\test.sge -o c:\test.sge.txt

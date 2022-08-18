@@ -1,0 +1,4 @@
+EXPORTS
+	_ZN23CSGEAudioWavPackDecoder11DecodeFileLE3RFsRK7TDesC16R5RBuf8RNS_9TWaveInfoE @ 1 NONAME
+	_ZN23CSGEAudioWavPackDecoder11DecodeFileLER5RBuf8S1_RNS_9TWaveInfoE @ 2 NONAME
+

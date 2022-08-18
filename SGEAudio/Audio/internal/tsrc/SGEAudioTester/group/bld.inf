@@ -1,0 +1,22 @@
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+PRJ_EXPORTS
+../data/audiotest1.wav           /epoc32/winscw/c/private/E32B08C9/audiotest1.wav
+../data/audiotest2.wav           /epoc32/winscw/c/private/E32B08C9/audiotest2.wav
+../data/audiotest3.wav           /epoc32/winscw/c/private/E32B08C9/audiotest3.wav
+../data/audiotest4.wav           /epoc32/winscw/c/private/E32B08C9/audiotest4.wav
+../data/audiotest5.wav           /epoc32/winscw/c/private/E32B08C9/audiotest5.wav
+../data/audiotest6.wav           /epoc32/winscw/c/private/E32B08C9/audiotest6.wav
+../data/audiotest7.wav           /epoc32/winscw/c/private/E32B08C9/audiotest7.wav
+../data/audiotest8.wav           /epoc32/winscw/c/private/E32B08C9/audiotest8.wav
+../data/audiotest9.wav           /epoc32/winscw/c/private/E32B08C9/audiotest9.wav
+
+
+PRJ_MMPFILES
+
+gnumakefile icons_aif_scalable_dc.mk
+
+
+SGEAudioTester.mmp

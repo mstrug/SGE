@@ -1,0 +1,52 @@
+/*
+ ============================================================================
+  Name	      : $(baseName).mmp
+  Author      : $(author)
+  Company     : $(company)
+  Version     : $(version)
+  Copyright   : $(copyright)
+  Description : This is the project specification file for $(baseName).
+ ============================================================================
+ */
+
+TARGET $(baseName).exe
+TARGETTYPE exe
+
+UID 0x100039CE $(uid3)
+VENDORID 0
+SECUREID $(uid3)
+
+LANG SC
+
+CAPABILITY NONE
+
+SOURCEPATH     ..\$(sourceDir)
+SOURCE         $(baseName).cpp
+SOURCE         $(baseName)Application.cpp 
+
+SOURCEPATH     ..\$(dataDir)
+START RESOURCE $(baseName).rss
+HEADER
+TARGET $(baseName)
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE $(baseName)_reg.rss
+TARGET $(baseName)_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+USERINCLUDE    ..\$(incDir)
+SYSTEMINCLUDE  \epoc32\include
+SYSTEMINCLUDE  \epoc32\include\SGE
+SYSTEMINCLUDE  \epoc32\include\SGE\SGEApplication
+
+LIBRARY	       SGEApplication.lib
+LIBRARY	       euser.lib
+ 
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+

@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : SGEAudioTesterSettingItemList.loc
+ Author      : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_01
+#include "SGEAudioTesterSettingItemList.l01"
+#endif

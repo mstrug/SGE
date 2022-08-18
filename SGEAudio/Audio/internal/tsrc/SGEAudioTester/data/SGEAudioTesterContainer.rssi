@@ -1,0 +1,174 @@
+/*
+========================================================================
+ Name        : SGEAudioTesterContainer.rssi
+ Author      : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+========================================================================
+*/
+#include "SGEAudioTesterContainer.hrh"
+#include "SGEAudioTesterContainer.loc"
+
+RESOURCE AVKON_VIEW r_sgeaudio_tester_container_sgeaudio_tester_container_view
+    {
+    cba = r_sgeaudio_tester_container_control_pane;
+    menubar = r_sgeaudio_tester_container_options_menu;
+    toolbar = 0;
+    }
+RESOURCE MENU_BAR r_sgeaudio_tester_container_options_menu
+    {titles =
+            {
+            MENU_TITLE
+            	{
+            	menu_pane = r_sgeaudio_tester_container_menu_pane1_menu_pane;
+            	}
+            };
+
+    }
+RESOURCE STATUS_PANE_APP_MODEL r_sgeaudio_tester_container_status_pane
+    {
+    panes =
+        {
+        SPANE_PANE
+        	{
+        	id = EEikStatusPaneUidTitle;
+        	type = EAknCtTitlePane;
+        	resource = r_sgeaudio_tester_container_title_resource;
+        	},
+        SPANE_PANE
+        	{
+        	id = EEikStatusPaneUidNavi;
+        	type = EAknCtNaviPane;
+        	resource = r_sgeaudio_tester_container_navi_text_resource;
+        	}
+        };
+    }
+RESOURCE TITLE_PANE r_sgeaudio_tester_container_title_resource
+    {
+    txt = STR_SGEAudioTesterContainerView_4;
+    }
+RESOURCE MENU_PANE r_sgeaudio_tester_container_menu_pane1_menu_pane
+    {
+    items =
+        {
+        MENU_ITEM
+        	{
+        	command = ESGEAudioTesterContainerViewAbout_MenuItemCommand;
+        	txt = STR_SGEAudioTesterContainerView_23;
+        	},
+        MENU_ITEM
+        	{
+        	command = ESGEAudioTesterContainerViewSettingsMenuItemCommand;
+        	txt = STR_SGEAudioTesterContainerView_5;
+        	},
+        MENU_ITEM
+        	{
+        	cascade = r_sgeaudio_tester_container_menu_pane2;
+        	txt = STR_SGEAudioTesterContainerView_6;
+        	},
+        MENU_ITEM
+        	{
+        	command = ESGEAudioTesterContainerViewInitializeMenuItemCommand;
+        	txt = STR_SGEAudioTesterContainerView_7;
+        	},
+        MENU_ITEM
+        	{
+        	command = EAknCmdExit;
+        	txt = STR_SGEAudioTesterContainerView_8;
+        	}
+        };
+    }
+RESOURCE CBA r_sgeaudio_tester_container_control_pane
+    {
+    buttons =
+        {
+        CBA_BUTTON
+            {
+            id = EAknSoftkeyOptions;
+            txt = STR_SGEAudioTesterContainerView_1;
+            },
+        CBA_BUTTON
+            {
+            id = EAknSoftkeyExit;
+            txt = STR_SGEAudioTesterContainerView_2;
+            },
+        CBA_BUTTON
+            {
+            id = ESGEAudioTesterContainerViewControlPaneMiddleId2;
+            txt = STR_SGEAudioTesterContainerView_3;
+            }
+        };
+    }
+RESOURCE NAVI_DECORATOR r_sgeaudio_tester_container_navi_text_resource
+    {
+    type = ENaviDecoratorLabel;
+    control = NAVI_LABEL
+        {
+        txt = STR_SGEAudioTesterContainerView_9;
+        };
+    }
+RESOURCE TBUF r_sgeaudio_tester_container_navi_text
+    {
+    buf = STR_SGEAudioTesterContainerView_9;
+    }
+RESOURCE MENU_PANE r_sgeaudio_tester_container_menu_pane2
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = ESGEAudioTesterContainerViewFile_1MenuItemCommand;
+			txt = STR_SGEAudioTesterContainerView_10;
+			},
+		MENU_ITEM
+			{
+			command = ESGEAudioTesterContainerViewFile_2MenuItemCommand;
+			txt = STR_SGEAudioTesterContainerView_11;
+			},
+		MENU_ITEM
+			{
+			command = ESGEAudioTesterContainerViewFile_3MenuItemCommand;
+			txt = STR_SGEAudioTesterContainerView_12;
+			},
+		MENU_ITEM
+			{
+			command = ESGEAudioTesterContainerViewFile_4MenuItemCommand;
+			txt = STR_SGEAudioTesterContainerView_14;
+			},
+		MENU_ITEM
+			{
+			command = ESGEAudioTesterContainerViewFile_5MenuItemCommand;
+			txt = STR_SGEAudioTesterContainerView_15;
+			},
+		MENU_ITEM
+			{
+			command = ESGEAudioTesterContainerViewFile_6MenuItemCommand;
+			txt = STR_SGEAudioTesterContainerView_16;
+			},
+		MENU_ITEM
+			{
+			command = ESGEAudioTesterContainerViewFile_7MenuItemCommand;
+			txt = STR_SGEAudioTesterContainerView_17;
+			},
+		MENU_ITEM
+			{
+			command = ESGEAudioTesterContainerViewFile_8MenuItemCommand;
+			txt = STR_SGEAudioTesterContainerView_18;
+			},
+		MENU_ITEM
+			{
+			command = ESGEAudioTesterContainerViewFile_9MenuItemCommand;
+			txt = STR_SGEAudioTesterContainerView_19;
+			}
+		};
+	}
+RESOURCE TBUF r_sgeaudio_tester_container_note_about
+	{
+	buf = STR_SGEAudioTesterContainerView_20;
+	}
+RESOURCE LABEL r_sgeaudio_tester_container_label_track1
+	{
+	txt = STR_SGEAudioTesterContainerView_13;
+	horiz_align = EEikLabelAlignHLeft;
+	standard_font = EEikLabelFontAnnotation;
+	}

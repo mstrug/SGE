@@ -1,0 +1,34 @@
+/*
+============================================================================
+ Name		: SGEFile_staticLib.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is the project specification file for SGEFile.
+============================================================================
+*/
+
+TARGET		  SGEFile_staticLib.lib
+TARGETTYPE	  lib
+UID		  0x1000008d 0x025EF7E5
+
+USERINCLUDE	  ..\inc
+SYSTEMINCLUDE     \epoc32\include \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+SOURCEPATH	  ..\src
+
+SOURCE		  SGEFile.cpp
+SOURCE		  SGEFileHeader.cpp SGEFileProvider.cpp
+
+
+nostrictdef
+
+//LIBRARY		 euser.lib estor.lib efsrv.lib bafl.lib 
+//LIBRARY        eikcore.lib cone.lib // for application installation drive 
+
+OPTION GCC -Wno-invalid-offsetof
+//OPTION GCC -w

@@ -1,0 +1,104 @@
+EXPORTS
+	_ZN10CSGEEngine10DeactivateEv @ 1 NONAME
+	_ZN10CSGEEngine10KeyUpEventERK9TKeyEvent @ 2 NONAME
+	_ZN10CSGEEngine11SizeChangedE5TSize @ 3 NONAME
+	_ZN10CSGEEngine12BitmapLoadedEji @ 4 NONAME
+	_ZN10CSGEEngine12KeyDownEventERK9TKeyEvent @ 5 NONAME
+	_ZN10CSGEEngine12PointerEventERK13TPointerEvent @ 6 NONAME
+	_ZN10CSGEEngine14BaseConstructLEv @ 7 NONAME
+	_ZN10CSGEEngine15AudioFileLoadedEii @ 8 NONAME
+	_ZN10CSGEEngine16AudioStreamErrorEi @ 9 NONAME
+	_ZN10CSGEEngine16BitmapsLoadedAllEv @ 10 NONAME
+	_ZN10CSGEEngine18AudioStreamCreatedEi @ 11 NONAME
+	_ZN10CSGEEngine19AudioAllFilesLoadedEv @ 12 NONAME
+	_ZN10CSGEEngine26AudioSoundTrackPlayStartedEj @ 13 NONAME
+	_ZN10CSGEEngine27AudioSoundTrackPlayFinishedEj @ 14 NONAME
+	_ZN10CSGEEngine8ActivateEv @ 15 NONAME
+	_ZN10CSGEEngine8KeyEventERK9TKeyEvent @ 16 NONAME
+	_ZN10CSGEEngine8SetPauseEi @ 17 NONAME
+	_ZN10CSGEEngineC1ER18MSGEEngineObserverP23CSGEEngineCommonObjects @ 18 NONAME
+	_ZN10CSGEEngineC1ER18MSGEEngineObserverP23CSGEEngineCommonObjects5TSize12TDisplayMode @ 19 NONAME
+	_ZN10CSGEEngineC2ER18MSGEEngineObserverP23CSGEEngineCommonObjects @ 20 NONAME
+	_ZN10CSGEEngineC2ER18MSGEEngineObserverP23CSGEEngineCommonObjects5TSize12TDisplayMode @ 21 NONAME
+	_ZN10CSGEEngineD0Ev @ 22 NONAME
+	_ZN10CSGEEngineD1Ev @ 23 NONAME
+	_ZN10CSGEEngineD2Ev @ 24 NONAME
+	_ZN20CSGEEngineController11EngineCloseEji @ 25 NONAME
+	_ZN20CSGEEngineController11SizeChangedE5TSize @ 26 NONAME
+	_ZN20CSGEEngineController12EngineSwitchEj @ 27 NONAME
+	_ZN20CSGEEngineController14BaseConstructLEv @ 28 NONAME
+	_ZN20CSGEEngineController15HandleKeyEventLERK9TKeyEvent10TEventCode @ 29 NONAME
+	_ZN20CSGEEngineController16SetCurrentEngineEj @ 30 NONAME
+	_ZN20CSGEEngineController18DoSetCurrentEngineEv @ 31 NONAME
+	_ZN20CSGEEngineController19HandlePointerEventLERK13TPointerEvent @ 32 NONAME
+	_ZN20CSGEEngineController20CreateCommonObjectsLEv @ 33 NONAME
+	_ZN20CSGEEngineController22HandleForegroundEventLEi @ 34 NONAME
+	_ZN20CSGEEngineController6UpdateEP14CBitmapContext5TRect27TTimeIntervalMicroSeconds32 @ 35 NONAME
+	_ZN20CSGEEngineController9AddEngineEP10CSGEEngine @ 36 NONAME
+	_ZN20CSGEEngineControllerC1ER28MSGEEngineControllerObserver5TSize @ 37 NONAME
+	_ZN20CSGEEngineControllerC2ER28MSGEEngineControllerObserver5TSize @ 38 NONAME
+	_ZN20CSGEEngineControllerD0Ev @ 39 NONAME
+	_ZN20CSGEEngineControllerD1Ev @ 40 NONAME
+	_ZN20CSGEEngineControllerD2Ev @ 41 NONAME
+	_ZN23CSGEEngineCommonObjects15SetFileProviderEP16CSGEFileProvider @ 42 NONAME
+	_ZN23CSGEEngineCommonObjects15SetFontProviderEP16CSGEFontProvider @ 43 NONAME
+	_ZN23CSGEEngineCommonObjects16SetAudioProviderEP17CSGEAudioProvider @ 44 NONAME
+	_ZN23CSGEEngineCommonObjects17SetBitmapProviderEP18CSGEBitmapProvider @ 45 NONAME
+	_ZN23CSGEEngineCommonObjects17SetStringProviderEP18CSGEStringProvider @ 46 NONAME
+	_ZN23CSGEEngineCommonObjectsC1Ev @ 47 NONAME
+	_ZN23CSGEEngineCommonObjectsC2Ev @ 48 NONAME
+	_ZN23CSGEEngineCommonObjectsD0Ev @ 49 NONAME
+	_ZN23CSGEEngineCommonObjectsD1Ev @ 50 NONAME
+	_ZN23CSGEEngineCommonObjectsD2Ev @ 51 NONAME
+	_ZNK20CSGEEngineController11EngineAddedEj @ 52 NONAME
+	_ZNK20CSGEEngineController13CurrentEngineEv @ 53 NONAME
+	_ZNK20CSGEEngineController4DrawEP14CBitmapContext5TRect @ 54 NONAME
+	_ZNK23CSGEEngineCommonObjects12FileProviderEv @ 55 NONAME
+	_ZNK23CSGEEngineCommonObjects12FontProviderEv @ 56 NONAME
+	_ZNK23CSGEEngineCommonObjects13AudioProviderEv @ 57 NONAME
+	_ZNK23CSGEEngineCommonObjects14BitmapProviderEv @ 58 NONAME
+	_ZNK23CSGEEngineCommonObjects14StringProviderEv @ 59 NONAME
+	_ZTI10CSGEEngine @ 60 NONAME
+	_ZTI20CSGEEngineController @ 61 NONAME
+	_ZTI23CSGEEngineCommonObjects @ 62 NONAME
+	_ZTV10CSGEEngine @ 63 NONAME
+	_ZTV20CSGEEngineController @ 64 NONAME
+	_ZTV23CSGEEngineCommonObjects @ 65 NONAME
+	_ZThn12_N10CSGEEngine10KeyUpEventERK9TKeyEvent @ 66 NONAME
+	_ZThn12_N10CSGEEngine12KeyDownEventERK9TKeyEvent @ 67 NONAME
+	_ZThn12_N10CSGEEngine8KeyEventERK9TKeyEvent @ 68 NONAME
+	_ZThn16_N10CSGEEngine12PointerEventERK13TPointerEvent @ 69 NONAME
+	_ZThn20_N10CSGEEngine15AudioFileLoadedEii @ 70 NONAME
+	_ZThn20_N10CSGEEngine16AudioStreamErrorEi @ 71 NONAME
+	_ZThn20_N10CSGEEngine18AudioStreamCreatedEi @ 72 NONAME
+	_ZThn20_N10CSGEEngine19AudioAllFilesLoadedEv @ 73 NONAME
+	_ZThn20_N10CSGEEngine26AudioSoundTrackPlayStartedEj @ 74 NONAME
+	_ZThn20_N10CSGEEngine27AudioSoundTrackPlayFinishedEj @ 75 NONAME
+	_ZThn24_N10CSGEEngine12BitmapLoadedEji @ 76 NONAME
+	_ZThn24_N10CSGEEngine16BitmapsLoadedAllEv @ 77 NONAME
+	_ZThn4_N20CSGEEngineController11EngineCloseEji @ 78 NONAME
+	_ZThn4_N20CSGEEngineController12EngineSwitchEj @ 79 NONAME
+	_ZN10CSGEEngine14TextureCreatedEji @ 80 NONAME
+	_ZN10CSGEEngine18TexturesCreatedAllEv @ 81 NONAME
+	_ZN17CSGEEngineGPTimer10ConstructLEv @ 82 NONAME ABSENT
+	_ZN17CSGEEngineGPTimer11SetObserverER25MSGEEngineGPTimerObserver @ 83 NONAME ABSENT
+	_ZN17CSGEEngineGPTimer4NewLER25MSGEEngineGPTimerObserver @ 84 NONAME ABSENT
+	_ZN17CSGEEngineGPTimer4StopEv @ 85 NONAME ABSENT
+	_ZN17CSGEEngineGPTimer5NewLCER25MSGEEngineGPTimerObserver @ 86 NONAME ABSENT
+	_ZN17CSGEEngineGPTimer5StartE27TTimeIntervalMicroSeconds32i @ 87 NONAME ABSENT
+	_ZN17CSGEEngineGPTimerC1ER25MSGEEngineGPTimerObserver @ 88 NONAME ABSENT
+	_ZN17CSGEEngineGPTimerC2ER25MSGEEngineGPTimerObserver @ 89 NONAME ABSENT
+	_ZN17CSGEEngineGPTimerD0Ev @ 90 NONAME ABSENT
+	_ZN17CSGEEngineGPTimerD1Ev @ 91 NONAME ABSENT
+	_ZN17CSGEEngineGPTimerD2Ev @ 92 NONAME ABSENT
+	_ZNK17CSGEEngineGPTimer12TimerTimeoutEv @ 93 NONAME ABSENT
+	_ZNK17CSGEEngineGPTimer13IsTimerLoopedEv @ 94 NONAME ABSENT
+	_ZNK17CSGEEngineGPTimer14IsTimerStartedEv @ 95 NONAME ABSENT
+	_ZTI17CSGEEngineGPTimer @ 96 NONAME ABSENT
+	_ZTV17CSGEEngineGPTimer @ 97 NONAME ABSENT
+	_ZThn28_N10CSGEEngine14TextureCreatedEji @ 98 NONAME
+	_ZThn28_N10CSGEEngine18TexturesCreatedAllEv @ 99 NONAME
+	_ZN23CSGEEngineCommonObjects14SetApplicationEP15CSGEApplication @ 100 NONAME
+	_ZNK20CSGEEngineController13CommonObjectsEv @ 101 NONAME
+	_ZNK23CSGEEngineCommonObjects11ApplicationEv @ 102 NONAME
+

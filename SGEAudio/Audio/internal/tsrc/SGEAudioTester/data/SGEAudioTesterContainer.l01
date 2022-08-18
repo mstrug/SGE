@@ -1,0 +1,30 @@
+/*
+========================================================================
+ Name        : SGEAudioTesterContainer.l01
+ Author      : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_SGEAudioTesterContainerView_1 "Options"
+#define STR_SGEAudioTesterContainerView_2 "Exit"
+#define STR_SGEAudioTesterContainerView_3 "Start"
+#define STR_SGEAudioTesterContainerView_4 "Audio Tester"
+#define STR_SGEAudioTesterContainerView_7 "Start"
+#define STR_SGEAudioTesterContainerView_8 "Exit"
+#define STR_SGEAudioTesterContainerView_5 "Config"
+#define STR_SGEAudioTesterContainerView_9 "Status: Stopped"
+#define STR_SGEAudioTesterContainerView_10 "File 1"
+#define STR_SGEAudioTesterContainerView_11 "File 2"
+#define STR_SGEAudioTesterContainerView_6 "Files"
+#define STR_SGEAudioTesterContainerView_18 "File 8"
+#define STR_SGEAudioTesterContainerView_19 "File 9"
+#define STR_SGEAudioTesterContainerView_12 "File 3"
+#define STR_SGEAudioTesterContainerView_14 "File 4"
+#define STR_SGEAudioTesterContainerView_15 "File 5"
+#define STR_SGEAudioTesterContainerView_16 "File 6"
+#define STR_SGEAudioTesterContainerView_17 "File 7"
+#define STR_SGEAudioTesterContainerView_20 "AudioTester\nv0.2\nMichal Strug 2010-2012\nwww.mbrsoftware.com"
+#define STR_SGEAudioTesterContainerView_23 "About"
+#define STR_SGEAudioTesterContainerView_13 "label"

@@ -1,0 +1,21 @@
+/*
+ ============================================================================
+  Name        : bld.inf
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../inc/SGESecurity.h            SGE/SGESecurity/SGESecurity.h
+../inc/SGEImeiGetter.h          SGE/SGESecurity/SGEImeiGetter.h
+
+PRJ_MMPFILES
+SGESecurity.mmp
+SGESecurity_staticlib.mmp

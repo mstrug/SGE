@@ -1,0 +1,36 @@
+/*
+============================================================================
+ Name		: sgesecuritytest.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+============================================================================
+*/
+
+TARGET		  sgesecuritytest.exe
+TARGETTYPE	  exe
+UID			 0 0xEF4af310
+
+USERINCLUDE  ..\inc
+USERINCLUDE   ..\..\..\inc
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+SOURCEPATH	  ..\src
+SOURCE		  sgesecuritytest.cpp
+
+LIBRARY		 euser.lib
+LIBRARY      efsrv.lib 
+LIBRARY      estor.lib 
+LIBRARY      bafl.lib 
+LIBRARY      caf.lib 
+LIBRARY      SGESecurity_staticlib.lib 
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif

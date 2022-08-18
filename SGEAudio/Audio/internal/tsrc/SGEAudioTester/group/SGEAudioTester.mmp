@@ -1,0 +1,54 @@
+
+TARGET			SGEAudioTester.exe
+UID			   0x100039CE 0xE32B08C9
+VENDORID	  	  0
+TARGETTYPE		exe
+EPOCSTACKSIZE	 0x5000
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\ecom
+SYSTEMINCLUDE \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+USERINCLUDE	   ..\inc ..\data
+
+SOURCEPATH		..\data
+START RESOURCE	SGEAudioTester.rss
+HEADER
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	SGEAudioTester_reg.rss
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+LIBRARY			euser.lib apparc.lib cone.lib eikcore.lib avkon.lib
+LIBRARY			commonengine.lib efsrv.lib estor.lib eikcoctl.lib eikdlg.lib 
+LIBRARY			eikctl.lib bafl.lib fbscli.lib aknnotify.lib aknicon.lib
+LIBRARY			etext.lib gdi.lib egul.lib insock.lib
+LIBRARY			ecom.lib InetProtUtil.lib http.lib esock.lib
+STATICLIBRARY   SGEAudio_staticlib.lib SGEFile_staticlib.lib
+LIBRARY         mediaclientaudiostream.lib mmfdevsound.lib mediaclientaudio.lib mmfserverbaseclasses.lib
+LIBRARY         centralrepository.lib 
+
+
+LANG 				01
+
+START BITMAP	SGEAudioTester.mbm
+HEADER
+TARGETPATH		\resource\apps
+SOURCEPATH		..\gfx
+SOURCE	c12,1	list_icon.bmp list_icon_mask.bmp
+END
+
+SOURCEPATH		..\src
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCE SGEAudioTesterContainerView.cpp SGEAudioTesterContainer.cpp SGEAudioTesterDocument.cpp SGEAudioTesterApplication.cpp SGEAudioTesterAppUi.cpp SGEAudioTesterSettingItemListSettings.cpp SGEAudioTesterSettingItemListView.cpp SGEAudioTesterSettingItemList.cpp SGEAudioTesterSettingItemListFile1Settings.cpp SGEAudioTesterSettingItemListFile1View.cpp SGEAudioTesterSettingItemListFile1.cpp
+
+EPOCHEAPSIZE 0x200000 0x1000000

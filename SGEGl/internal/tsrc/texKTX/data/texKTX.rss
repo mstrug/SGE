@@ -1,0 +1,26 @@
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <appinfo.rh>
+
+
+rls_string STRING_r_bt_address_label_text "Enter?"
+
+RESOURCE DIALOG r_bt_address_query
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = STRING_r_bt_address_label_text;
+                };
+            }
+        };
+    }

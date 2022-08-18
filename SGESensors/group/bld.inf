@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+  Name        : bld.inf
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../inc/SGECircularBuffer.h			SGE/SGESensors/SGECircularBuffer.h
+../inc/SGECircularBuffer.inl			SGE/SGESensors/SGECircularBuffer.inl
+../inc/SGESensorBase.h				SGE/SGESensors/SGESensorBase.h
+../inc/SGESensorAccelerometer.h			SGE/SGESensors/SGESensorAccelerometer.h
+../inc/SGESensorOrientation.h			SGE/SGESensors/SGESensorOrientation.h
+../inc/SGESensorRotation.h			SGE/SGESensors/SGESensorRotation.h
+../inc/SGESensorShake.h				SGE/SGESensors/SGESensorShake.h
+../inc/SGESensorCompass.h			SGE/SGESensors/SGESensorCompass.h
+//../inc/SGESensorGPS.h				SGE/SGESensors/SGESensorGPS.h
+
+PRJ_MMPFILES
+SGESensors.mmp
+SGESensors_staticlib.mmp

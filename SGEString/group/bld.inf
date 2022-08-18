@@ -1,0 +1,20 @@
+/*
+ ============================================================================
+  Name        : bld.inf
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../inc/SGEStringProvider.h      SGE/SGEString/SGEStringProvider.h
+
+PRJ_MMPFILES
+SGEString.mmp
+SGEString_staticlib.mmp

@@ -1,0 +1,447 @@
+/*
+========================================================================
+ Name        : SGEAudioTesterSettingItemListFile1.rssi
+ Author      : ${author}
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+========================================================================
+*/
+#include "SGEAudioTesterSettingItemListFile1.hrh"
+#include "SGEAudioTesterSettingItemListFile1.loc"
+
+RESOURCE AVKON_VIEW r_sgeaudio_tester_setting_item_list_file1_sgeaudio_tester_setting_item_list_file1_view
+	{
+	cba = r_sgeaudio_tester_setting_item_list_file1_control_pane;
+	toolbar = 0;
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_sgeaudio_tester_setting_item_list_file1_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_sgeaudio_tester_setting_item_list_file1_title_resource;
+			},
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidNavi;
+			type = EAknCtNaviPane;
+			resource = r_sgeaudio_tester_setting_item_list_file1_navi_text_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_sgeaudio_tester_setting_item_list_file1_title_resource
+	{
+	txt = STR_SGEAudioTesterSettingItemListFile1View_5;
+	}
+RESOURCE AVKON_SETTING_ITEM_LIST r_sgeaudio_tester_setting_item_list_file1_sgeaudio_tester_setting_item_list_file1
+	{
+	items =
+		{
+		AVKON_SETTING_ITEM
+			{
+			name = STR_SGEAudioTesterSettingItemListFile1View_28;
+			identifier = ESGEAudioTesterSettingItemListFile1ViewEnumeratedTextPopupFileName;
+			setting_page_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_setting_page_resource;
+			associated_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name;
+			},
+		AVKON_SETTING_ITEM
+			{
+			name = STR_SGEAudioTesterSettingItemListFile1View_191;
+			identifier = ESGEAudioTesterSettingItemListFile1ViewSliderVolume;
+			setting_page_resource = r_sgeaudio_tester_setting_item_list_file1_slider_volume_setting_page_resource;
+			},
+		AVKON_SETTING_ITEM
+			{
+			name = STR_SGEAudioTesterSettingItemListFile1View_193;
+			identifier = ESGEAudioTesterSettingItemListFile1ViewEnumeratedTextPopupRepeat;
+			setting_page_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_setting_page_resource;
+			associated_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat;
+			},
+		AVKON_SETTING_ITEM
+			{
+			name = STR_SGEAudioTesterSettingItemListFile1View_96;
+			identifier = ESGEAudioTesterSettingItemListFile1ViewEnumeratedTextPopupKey;
+			setting_page_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_setting_page_resource;
+			associated_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key;
+			}
+		};
+	}
+RESOURCE CBA r_sgeaudio_tester_setting_item_list_file1_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyOk;
+			txt = STR_SGEAudioTesterSettingItemListFile1View_2;
+			},
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyCancel;
+			txt = STR_SGEAudioTesterSettingItemListFile1View_3;
+			},
+		CBA_BUTTON
+			{
+			id = EAknSoftkeySelect;
+			txt = STR_SGEAudioTesterSettingItemListFile1View_4;
+			}
+		};
+	}
+RESOURCE AVKON_SETTING_PAGE r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_setting_page_resource
+	{
+	label = STR_SGEAudioTesterSettingItemListFile1View_28;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_editor_resource_id;
+	}
+RESOURCE POPUP_SETTING_LIST r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_editor_resource_id
+	{
+	}
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name
+	{
+	setting_texts_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_setting_texts_resource;
+	popped_up_texts_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_popped_up_texts_resource;
+	}
+RESOURCE ARRAY r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_setting_texts_resource
+	{
+	items =
+		{
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_31;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_17;
+			value = 1;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_55;
+			value = 2;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_57;
+			value = 3;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_73;
+			value = 4;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_75;
+			value = 5;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_77;
+			value = 6;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_79;
+			value = 7;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_81;
+			value = 8;
+			}
+		};
+	}
+RESOURCE ARRAY r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_popped_up_texts_resource
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_32;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_18;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_56;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_72;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_74;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_76;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_78;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_80;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_82;
+			}
+		};
+	}
+RESOURCE AVKON_SETTING_PAGE r_sgeaudio_tester_setting_item_list_file1_slider_volume_setting_page_resource
+	{
+	label = STR_SGEAudioTesterSettingItemListFile1View_191;
+	type = EAknCtSlider;
+	editor_resource_id = r_sgeaudio_tester_setting_item_list_file1_slider_volume_editor_resource_id;
+	}
+RESOURCE SLIDER r_sgeaudio_tester_setting_item_list_file1_slider_volume_editor_resource_id
+	{
+	layout = EAknSettingsItemSliderLayout;
+	minvalue = -10;
+	maxvalue = 10;
+	step = 1;
+	valuetype = EAknSliderValueDecimal;
+	minlabel = STR_SGEAudioTesterSettingItemListFile1View_189;
+	maxlabel = STR_SGEAudioTesterSettingItemListFile1View_190;
+	}
+RESOURCE AVKON_SETTING_PAGE r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_setting_page_resource
+	{
+	label = STR_SGEAudioTesterSettingItemListFile1View_193;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_editor_resource_id;
+	}
+RESOURCE POPUP_SETTING_LIST r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_editor_resource_id
+	{
+	}
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat
+	{
+	setting_texts_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_setting_texts_resource;
+	popped_up_texts_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_popped_up_texts_resource;
+	}
+RESOURCE ARRAY r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_setting_texts_resource
+	{
+	items =
+		{
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_214;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_216;
+			value = -1;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_218;
+			value = 1;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_220;
+			value = 2;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_222;
+			value = 3;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_224;
+			value = 4;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_226;
+			value = 5;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_228;
+			value = 10;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_230;
+			value = 20;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_232;
+			value = 50;
+			}
+		};
+	}
+RESOURCE ARRAY r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_popped_up_texts_resource
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_215;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_217;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_219;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_221;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_223;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_225;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_227;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_229;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_231;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_233;
+			}
+		};
+	}
+RESOURCE NAVI_DECORATOR r_sgeaudio_tester_setting_item_list_file1_navi_text_resource
+	{
+	type = ENaviDecoratorLabel;
+	control = NAVI_LABEL
+		{
+		txt = STR_SGEAudioTesterSettingItemListFile1View_14;
+		};
+	}
+RESOURCE TBUF r_sgeaudio_tester_setting_item_list_file1_navi_text
+	{
+	buf = STR_SGEAudioTesterSettingItemListFile1View_14;
+	}
+RESOURCE AVKON_SETTING_PAGE r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_setting_page_resource
+	{
+	label = STR_SGEAudioTesterSettingItemListFile1View_96;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_editor_resource_id;
+	}
+RESOURCE POPUP_SETTING_LIST r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_editor_resource_id
+	{
+	}
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key
+	{
+	setting_texts_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_setting_texts_resource;
+	popped_up_texts_resource = r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_popped_up_texts_resource;
+	}
+RESOURCE ARRAY r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_setting_texts_resource
+	{
+	items =
+		{
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_101;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_19;
+			value = 1;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_58;
+			value = 2;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_60;
+			value = 3;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_62;
+			value = 4;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_64;
+			value = 5;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_66;
+			value = 6;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_68;
+			value = 7;
+			},
+		AVKON_ENUMERATED_TEXT
+			{
+			text = STR_SGEAudioTesterSettingItemListFile1View_70;
+			value = 8;
+			}
+		};
+}
+RESOURCE ARRAY r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_popped_up_texts_resource
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_102;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_20;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_59;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_61;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_63;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_65;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_67;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_69;
+			},
+		LBUF
+			{
+			txt = STR_SGEAudioTesterSettingItemListFile1View_71;
+			}
+		};
+}

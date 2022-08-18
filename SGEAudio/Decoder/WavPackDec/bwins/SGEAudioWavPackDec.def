@@ -1,0 +1,4 @@
+EXPORTS
+	?DecodeFileL@CSGEAudioWavPackDecoder@@SAHAAVRBuf8@@0AAVTWaveInfo@1@@Z @ 1 NONAME ; int CSGEAudioWavPackDecoder::DecodeFileL(class RBuf8 &, class RBuf8 &, class CSGEAudioWavPackDecoder::TWaveInfo &)
+	?DecodeFileL@CSGEAudioWavPackDecoder@@SAHVRFs@@ABVTDesC16@@AAVRBuf8@@AAVTWaveInfo@1@@Z @ 2 NONAME ; int CSGEAudioWavPackDecoder::DecodeFileL(class RFs, class TDesC16 const &, class RBuf8 &, class CSGEAudioWavPackDecoder::TWaveInfo &)
+

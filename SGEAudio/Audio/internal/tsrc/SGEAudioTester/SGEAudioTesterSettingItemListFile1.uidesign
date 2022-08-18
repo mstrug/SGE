@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknView" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitle" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NaviText" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NaviBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknSettingItemList" version="1.1.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknEnumeratedTextPopupSettingItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.EnumeratedTextPopupBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknSlider" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.2.0</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknView">
+    <property id="className">CSGEAudioTesterSettingItemListFile1View</property>
+    <compoundProperty id="location">
+      <property id="x">51</property>
+      <property id="y">44</property>
+    </compoundProperty>
+    <property id="name">SGEAudioTesterSettingItemListFile1View</property>
+    <compoundProperty id="size">
+      <property id="width">240</property>
+      <property id="height">320</property>
+    </compoundProperty>
+    <component id="com.nokia.sdt.series60.StatusPane">
+      <compoundProperty id="location">
+        <property id="x">20</property>
+      </compoundProperty>
+      <property id="name">statusPane</property>
+      <compoundProperty id="size">
+        <property id="width">204</property>
+        <property id="height">63</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.StatusPaneTitle">
+        <compoundProperty id="location">
+          <property id="x">56</property>
+        </compoundProperty>
+        <property id="name">title</property>
+        <property id="titleText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_5</property>
+        <compoundProperty id="size">
+          <property id="width">148</property>
+          <property id="height">43</property>
+        </compoundProperty>
+        <compoundProperty id="image"/>
+      </component>
+      <component id="com.nokia.sdt.series60.NaviText">
+        <compoundProperty id="location">
+          <property id="x">60</property>
+          <property id="y">43</property>
+        </compoundProperty>
+        <property id="name">naviText</property>
+        <property id="text" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_14</property>
+        <compoundProperty id="size">
+          <property id="width">144</property>
+          <property id="height">20</property>
+        </compoundProperty>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CBA">
+      <compoundProperty id="location">
+        <property id="y">288</property>
+      </compoundProperty>
+      <compoundProperty id="info">
+        <property id="leftText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_2</property>
+        <property id="rightText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_3</property>
+        <property id="middleText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_4</property>
+        <property id="leftId">EAknSoftkeyOk</property>
+        <property id="rightId">EAknSoftkeyCancel</property>
+        <property id="type">CUSTOM</property>
+        <property id="middleId">EAknSoftkeySelect</property>
+      </compoundProperty>
+      <property id="name">controlPane</property>
+      <compoundProperty id="size">
+        <property id="width">240</property>
+        <property id="height">32</property>
+      </compoundProperty>
+      <eventBinding id="leftSoftKeyPressed" handlerDisplay="HandleControlPaneLeftSoftKeyPressedL" handlerSymbol="cpp@src//SGEAudioTesterSettingItemListFile1View.cpp/function(CSGEAudioTesterSettingItemListFile1View::HandleControlPaneLeftSoftKeyPressedL(TInt))"/>
+      <eventBinding id="middleSoftKeyPressed" handlerDisplay="HandleControlPaneMiddleSoftKeyPressedL" handlerSymbol="cpp@src//SGEAudioTesterSettingItemListFile1View.cpp/function(CSGEAudioTesterSettingItemListFile1View::HandleControlPaneMiddleSoftKeyPressedL(TInt))"/>
+      <eventBinding id="rightSoftKeyPressed" handlerDisplay="HandleControlPaneRightSoftKeyPressedL" handlerSymbol="cpp@src//SGEAudioTesterSettingItemListFile1View.cpp/function(CSGEAudioTesterSettingItemListFile1View::HandleControlPaneRightSoftKeyPressedL(TInt))"/>
+    </component>
+    <component id="com.nokia.sdt.series60.CAknSettingItemList">
+      <property id="title" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_1</property>
+      <compoundProperty id="location">
+        <property id="y">66</property>
+      </compoundProperty>
+      <property id="className">CSGEAudioTesterSettingItemListFile1</property>
+      <property id="name">SGEAudioTesterSettingItemListFile1</property>
+      <property id="EAknSettingItemNumberedStyle">false</property>
+      <compoundProperty id="size">
+        <property id="width">240</property>
+        <property id="height">222</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.CAknEnumeratedTextPopupSettingItem">
+        <sequenceProperty id="items">
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_31</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_32</property>
+            <property id="value">0</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_17</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_18</property>
+            <property id="value">1</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_55</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_56</property>
+            <property id="value">2</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_57</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_72</property>
+            <property id="value">3</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_73</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_74</property>
+            <property id="value">4</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_75</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_76</property>
+            <property id="value">5</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_77</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_78</property>
+            <property id="value">6</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_79</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_80</property>
+            <property id="value">7</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_81</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_82</property>
+            <property id="value">8</property>
+          </compoundElement>
+        </sequenceProperty>
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">0</property>
+        </compoundProperty>
+        <property id="name">enumeratedTextPopupFileName</property>
+        <property id="itemTitle" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_28</property>
+        <compoundProperty id="size">
+          <property id="height">54</property>
+          <property id="width">240</property>
+        </compoundProperty>
+      </component>
+      <component id="com.nokia.sdt.series60.CAknSlider">
+        <property id="maxLabel" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_190</property>
+        <compoundProperty id="size">
+          <property id="height">54</property>
+          <property id="width">240</property>
+        </compoundProperty>
+        <property id="minLabel" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_189</property>
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">54</property>
+        </compoundProperty>
+        <property id="itemTitle" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_191</property>
+        <compoundProperty id="graphicalImage"/>
+        <property id="name">sliderVolume</property>
+        <property id="valueType">EAknSliderValueDecimal</property>
+        <property id="maxValue">10</property>
+        <property id="minValue">-10</property>
+      </component>
+      <component id="com.nokia.sdt.series60.CAknEnumeratedTextPopupSettingItem">
+        <sequenceProperty id="items">
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_214</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_215</property>
+            <property id="value">0</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_216</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_217</property>
+            <property id="value">-1</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_218</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_219</property>
+            <property id="value">1</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_220</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_221</property>
+            <property id="value">2</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_222</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_223</property>
+            <property id="value">3</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_224</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_225</property>
+            <property id="value">4</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_226</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_227</property>
+            <property id="value">5</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_228</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_229</property>
+            <property id="value">10</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_230</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_231</property>
+            <property id="value">20</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_232</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_233</property>
+            <property id="value">50</property>
+          </compoundElement>
+        </sequenceProperty>
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">108</property>
+        </compoundProperty>
+        <property id="name">enumeratedTextPopupRepeat</property>
+        <property id="itemTitle" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_193</property>
+        <compoundProperty id="size">
+          <property id="height">54</property>
+          <property id="width">240</property>
+        </compoundProperty>
+      </component>
+      <component id="com.nokia.sdt.series60.CAknEnumeratedTextPopupSettingItem">
+        <sequenceProperty id="items">
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_101</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_102</property>
+            <property id="value">0</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_19</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_20</property>
+            <property id="value">1</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_58</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_59</property>
+            <property id="value">2</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_60</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_61</property>
+            <property id="value">3</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_62</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_63</property>
+            <property id="value">4</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_64</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_65</property>
+            <property id="value">5</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_66</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_67</property>
+            <property id="value">6</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_68</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_69</property>
+            <property id="value">7</property>
+          </compoundElement>
+          <compoundElement>
+            <property id="settingText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_70</property>
+            <property id="popupText" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_71</property>
+            <property id="value">8</property>
+          </compoundElement>
+        </sequenceProperty>
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">162</property>
+        </compoundProperty>
+        <property id="name">enumeratedTextPopupKey</property>
+        <property id="itemTitle" type="i18n">STR_SGEAudioTesterSettingItemListFile1View_96</property>
+        <compoundProperty id="size">
+          <property id="height">54</property>
+          <property id="width">240</property>
+        </compoundProperty>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_English">
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_1">Settings</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_2">Ok</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_3">Cancel</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_4">Change</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_5">Audio file settings</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_28">File name</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_31">audiotest1.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_32">audiotest1.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_189">quietly</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_190">louder</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_191">Volume</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_193">Repeat</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_214">None</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_215">None</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_216">Infinite</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_217">Infinite</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_218">1</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_219">1</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_220">2</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_221">2</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_222">3</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_223">3</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_224">4</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_225">4</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_226">5</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_227">5</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_228">10</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_229">10</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_230">20</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_231">20</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_232">50</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_233">50</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_14">File 1</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_17">audiotest2.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_18">audiotest2.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_96">Key</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_101">1</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_102">1</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_19">2</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_20">2</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_58">3</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_59">3</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_60">4</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_61">4</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_62">5</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_63">5</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_64">6</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_65">6</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_66">7</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_67">7</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_68">8</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_69">8</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_70">9</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_71">9</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_55">audiotest3.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_56">audiotest3.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_57">audiotest4.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_72">audiotest4.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_73">audiotest5.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_74">audiotest5.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_75">audiotest6.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_76">audiotest6.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_77">audiotest7.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_78">audiotest7.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_79">audiotest8.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_80">audiotest8.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_81">audiotest9.wav</string>
+      <string id="STR_SGEAudioTesterSettingItemListFile1View_82">audiotest9.wav</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="enumeratedTextPopupRepeat" rsrcId="member$setting_page_resource">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_setting_page_resource</resourceMapping>
+      <resourceMapping instanceName="sliderVolume" rsrcId="member$setting_page_resource">r_sgeaudio_tester_setting_item_list_file1_slider_volume_setting_page_resource</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupKey" rsrcId="member$setting_page_resource">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_setting_page_resource</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupKey" rsrcId="setting">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_setting_texts_resource</resourceMapping>
+      <resourceMapping instanceName="SGEAudioTesterSettingItemListFile1">r_sgeaudio_tester_setting_item_list_file1_sgeaudio_tester_setting_item_list_file1</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupRepeat" rsrcId="setting">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_setting_texts_resource</resourceMapping>
+      <resourceMapping instanceName="naviText" rsrcId="text">r_sgeaudio_tester_setting_item_list_file1_navi_text</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupFileName">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_editor_resource_id</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_sgeaudio_tester_setting_item_list_file1_status_pane</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupFileName" rsrcId="popup">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_popped_up_texts_resource</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupRepeat" rsrcId="associated">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupKey" rsrcId="associated">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key</resourceMapping>
+      <resourceMapping instanceName="SGEAudioTesterSettingItemListFile1View">r_sgeaudio_tester_setting_item_list_file1_sgeaudio_tester_setting_item_list_file1_view</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupFileName" rsrcId="member$setting_page_resource">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_setting_page_resource</resourceMapping>
+      <resourceMapping instanceName="title">r_sgeaudio_tester_setting_item_list_file1_title_resource</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupFileName" rsrcId="setting">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name_setting_texts_resource</resourceMapping>
+      <resourceMapping instanceName="naviText">r_sgeaudio_tester_setting_item_list_file1_navi_text_resource</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupKey">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_editor_resource_id</resourceMapping>
+      <resourceMapping instanceName="sliderVolume">r_sgeaudio_tester_setting_item_list_file1_slider_volume_editor_resource_id</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupRepeat" rsrcId="popup">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_popped_up_texts_resource</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupRepeat">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_repeat_editor_resource_id</resourceMapping>
+      <resourceMapping instanceName="controlPane">r_sgeaudio_tester_setting_item_list_file1_control_pane</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupKey" rsrcId="popup">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_key_popped_up_texts_resource</resourceMapping>
+      <resourceMapping instanceName="enumeratedTextPopupFileName" rsrcId="associated">r_sgeaudio_tester_setting_item_list_file1_enumerated_text_popup_file_name</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="enumeratedTextPopupKey" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_SETTING_ITEM_ID">ESGEAudioTesterSettingItemListFile1ViewEnumeratedTextPopupKey</enumMapping>
+      <enumMapping instanceName="controlPane" propertyId="leftId" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EAknSoftkeyOk</enumMapping>
+      <enumMapping instanceName="enumeratedTextPopupFileName" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_SETTING_ITEM_ID">ESGEAudioTesterSettingItemListFile1ViewEnumeratedTextPopupFileName</enumMapping>
+      <enumMapping instanceName="sliderVolume" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_SETTING_ITEM_ID">ESGEAudioTesterSettingItemListFile1ViewSliderVolume</enumMapping>
+      <enumMapping instanceName="enumeratedTextPopupRepeat" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_SETTING_ITEM_ID">ESGEAudioTesterSettingItemListFile1ViewEnumeratedTextPopupRepeat</enumMapping>
+      <enumMapping instanceName="naviText" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtNaviPane</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidTitle</enumMapping>
+      <enumMapping instanceName="enumeratedTextPopupKey" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtPopupSettingList</enumMapping>
+      <enumMapping instanceName="SGEAudioTesterSettingItemListFile1View" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">ESGEAudioTesterSettingItemListFile1ViewId</enumMapping>
+      <enumMapping instanceName="menuItem1" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ESGEAudioTesterSettingItemListFile1ViewMenuItem1Command</enumMapping>
+      <enumMapping instanceName="controlPane" propertyId="middleId" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EAknSoftkeySelect</enumMapping>
+      <enumMapping instanceName="sliderVolume" propertyId="valueType">EAknSliderValueDecimal</enumMapping>
+      <enumMapping instanceName="sliderVolume" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtSlider</enumMapping>
+      <enumMapping instanceName="enumeratedTextPopupFileName" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtPopupSettingList</enumMapping>
+      <enumMapping instanceName="enumeratedTextPopupRepeat" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtPopupSettingList</enumMapping>
+      <enumMapping instanceName="naviText" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidNavi</enumMapping>
+      <enumMapping instanceName="sliderVolume" propertyId="layout">EAknSettingsItemSliderLayout</enumMapping>
+      <enumMapping instanceName="controlPane" propertyId="rightId" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EAknSoftkeyCancel</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtTitlePane</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>inc/sgeaudiotestersettingitemlistfile1settings.h</file>
+    <file>src/sgeaudiotestersettingitemlistfile1settings.cpp</file>
+    <file>inc/sgeaudiotestersettingitemlistfile1.h</file>
+    <file>inc/sgeaudiotestersettingitemlistfile1view.h</file>
+    <file>src/sgeaudiotestersettingitemlistfile1view.cpp</file>
+    <file>src/sgeaudiotestersettingitemlistfile1.cpp</file>
+    <file>data/sgeaudiotester.rss</file>
+    <file>data/sgeaudiotestersettingitemlistfile1.rssi</file>
+    <file>inc/sgeaudiotester.hrh</file>
+    <file>data/sgeaudiotestercontainer.rssi</file>
+    <file>inc/sgeaudiotestercontainer.hrh</file>
+    <file>data/sgeaudiotestersettingitemlist.rssi</file>
+    <file>inc/sgeaudiotestersettingitemlist.hrh</file>
+    <file>inc/sgeaudiotestersettingitemlistfile1.hrh</file>
+    <file>data/sgeaudiotester.loc</file>
+    <file>data/sgeaudiotester.l01</file>
+    <file>data/sgeaudiotestercontainer.loc</file>
+    <file>data/sgeaudiotestercontainer.l01</file>
+    <file>data/sgeaudiotestersettingitemlist.loc</file>
+    <file>data/sgeaudiotestersettingitemlist.l01</file>
+    <file>data/sgeaudiotestersettingitemlistfile1.loc</file>
+    <file>data/sgeaudiotestersettingitemlistfile1.l01</file>
+  </generatedFiles>
+</designerData>

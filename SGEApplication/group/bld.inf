@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+  Name        : bld.inf
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../inc/SGEApplication.h 	SGE/SGEApplication/SGEApplication.h
+../inc/SGEGameApplication.h 	SGE/SGEApplication/SGEGameApplication.h
+../inc/SGEGameApplicationDS.h 	SGE/SGEApplication/SGEGameApplicationDS.h
+../inc/SGEGameApplicationDSB.h 	SGE/SGEApplication/SGEGameApplicationDSB.h
+../inc/SGEGameApplicationGL.h 	SGE/SGEApplication/SGEGameApplicationGL.h
+../inc/SGEGameApplicationVG.h 	SGE/SGEApplication/SGEGameApplicationVG.h
+
+PRJ_MMPFILES
+SGEApplication.mmp
+SGEApplication_staticlib.mmp

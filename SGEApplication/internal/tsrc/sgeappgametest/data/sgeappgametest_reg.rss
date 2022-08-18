@@ -1,0 +1,27 @@
+/*
+============================================================================
+ Name		: sgeappgametest.rss
+ Author	  : 
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This file contains the application registration resource.
+============================================================================
+*/
+
+#include "sgeappgametest.rls"
+#include <appinfo.rh>
+#include <sgeappgametest.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0xE22B5DAb
+
+RESOURCE APP_REGISTRATION_INFO
+	{
+	app_file = "sgeappgametest";
+	group_name="SGE";
+	localisable_resource_file =  qtn_loc_resource_file_1;
+	localisable_resource_id = R_LOCALISABLE_APP_INFO;
+
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+	}
+

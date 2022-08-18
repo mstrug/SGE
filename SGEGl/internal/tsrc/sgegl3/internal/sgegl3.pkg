@@ -1,0 +1,22 @@
+;Languages
+&EN
+
+;Header
+#{"SGEGl3"}, (0xE22B50A1), 1, 0, 0,TYPE=SA
+
+;Localised Vendor name
+%{"Vendor-EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+;Files to install
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\sgegl3.exe"                       -"!:\sys\bin\sgegl3.exe"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\sgegl3.RSC"                    -"!:\resource\apps\sgegl3.RSC"
+"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\sgegl3_reg.RSC" -"!:\private\10003a3f\import\apps\sgegl3_reg.RSC"
+;"$(EPOCROOT)Epoc32\data\z\resource\apps\simplecube_icon.mif"  			        -"!:\resource\apps\simplecube_icon.mif"
+
+

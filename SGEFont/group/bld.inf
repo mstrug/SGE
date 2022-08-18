@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+  Name        : bld.inf
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../inc/SGEFontProvider.h    SGE/SGEFont/SGEFontProvider.h
+../inc/SGEFontFamily.h      SGE/SGEFont/SGEFontFamily.h
+../inc/SGEFont.h            SGE/SGEFont/SGEFont.h
+../inc/SGEFontGraphic.h     SGE/SGEFont/SGEFontGraphic.h
+../inc/SGEFontSystem.h      SGE/SGEFont/SGEFontSystem.h
+../inc/SGEFontGDR.h         SGE/SGEFont/SGEFontGDR.h
+
+PRJ_MMPFILES
+SGEFont.mmp
+SGEFont_staticlib.mmp

@@ -1,0 +1,15 @@
+When building with exportunfrozen for gcce:
+
+Change in 60_3rd_FP2_SDK_v1.1\epoc32\tools\cl_bpabi.pm (Line: 1331)
+
+            if (!(-e $DefFile) || $NoExportLibrary) {
+                &main::Output( "\t\t--ignorenoncallable \\\n" );
+            }
+
+to:
+
+#            if (!(-e $DefFile) || $NoExportLibrary) {
+#                &main::Output( "\t\t--ignorenoncallable \\\n" );
+#            }
+
+

@@ -1,0 +1,62 @@
+/*
+============================================================================
+ Name		: sgeappgameglvgtest.mmp
+ Author	  	: Michal Strug
+ Copyright      : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description 	: 
+============================================================================
+*/
+
+
+TARGET			sgeappgameglvgtest.exe
+TARGETTYPE		exe
+UID		        0x100039CE 0xE23B6DAa
+
+SOURCEPATH		..\src
+SOURCE			myapplication.cpp
+SOURCE 	sgeappgameglvgtest.cpp
+
+
+
+SOURCEPATH		..\data
+
+START RESOURCE	sgeappgameglvgtest.rss
+HEADER
+TARGET sgeappgameglvgtest
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	sgeappgameglvgtest_reg.rss
+TARGET sgeappgameglvgtest_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+
+
+USERINCLUDE	   ..\inc
+
+SYSTEMINCLUDE	 \epoc32\include
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+SYSTEMINCLUDE	 \epoc32\include\SGE
+SYSTEMINCLUDE	 \epoc32\include\SGE\SGEApplication
+
+LIBRARY		   libopenvg.lib libopenvgu.lib libegl.lib
+LIBRARY            eikcore.lib avkon.lib apparc.lib cone.lib euser.lib estor.lib efsrv.lib bafl.lib ws32.lib bitgdi.lib fbscli.lib hal.lib libgles_cm.lib scdv.lib RemConCoreApi.lib RemConInterfaceBase.lib
+STATICLIBRARY	   SGEEgl_staticlib.lib
+STATICLIBRARY	   SGEApplication_staticlib.lib
+
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xE23B6DAa
+//CAPABILITY	  	  ReadUserData NetworkServices
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+

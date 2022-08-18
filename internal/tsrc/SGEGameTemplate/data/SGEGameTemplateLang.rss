@@ -1,0 +1,35 @@
+
+#include "SGEGameTemplate.loc"
+
+
+// define structures
+
+STRUCT STRING { LTEXT text; }
+
+// define resources
+
+//=========================================================================
+//	GLOBALS
+//=========================================================================
+
+
+RESOURCE STRING r_string_application_name { text = qtn_loc_application_name; }
+
+
+//=========================================================================
+//	ENGINE 1 GLOBALS
+//=========================================================================
+
+RESOURCE STRING r_string_engine_1_text { text = qtn_loc_engine_1_text; }
+
+
+//=========================================================================
+//	ENGINE 2 GLOBALS
+//=========================================================================
+
+RESOURCE STRING r_string_engine_2_text { text = qtn_loc_engine_2_text; }
+
+
+
+// End of file
+

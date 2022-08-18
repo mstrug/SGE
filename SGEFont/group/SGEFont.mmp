@@ -1,0 +1,46 @@
+/*
+ ============================================================================
+  Name        : SGEFont.mmp
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+TARGET            SGEFont.dll
+TARGETTYPE        dll
+UID               0x1000008d 0x025EAAA5
+
+SOURCEPATH        ..\src
+SOURCE SGEFont.cpp SGEFontGraphic.cpp SGEFontProvider.cpp SGEFontFamily.cpp SGEFontSystem.cpp SGEFontGDR.cpp
+
+
+USERINCLUDE       ..\inc
+SYSTEMINCLUDE     \epoc32\include 
+SYSTEMINCLUDE     \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+
+LIBRARY           euser.lib fbscli.lib bitmaptransforms.lib efsrv.lib imageconversion.lib estor.lib bafl.lib gdi.lib bitgdi.lib egul.lib fntstr.lib eikcore.lib ws32.lib cone.lib
+LIBRARY           SGEFile.lib SGEBitmap.lib
+
+//STATICLIBRARY SGEFile_staticLib.lib SGEBitmap_staticlib.lib
+
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+
+CAPABILITY NetworkServices
+
+//OPTION GCC -Wno-invalid-offsetof
+//OPTION GCC -w
+
+EXPORTUNFROZEN
+
+

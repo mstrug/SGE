@@ -1,0 +1,37 @@
+/*
+========================================================================
+ Name        : SGEAudioTesterContainer.hrh
+ Author      : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+========================================================================
+*/
+enum TSGEAudioTesterContainerViewCommands
+    {
+    ESGEAudioTesterContainerViewExitMenuItemCommand = 0x6000,
+    ESGEAudioTesterContainerViewInitializeMenuItemCommand,
+    ESGEAudioTesterContainerViewSettingsMenuItemCommand,
+    ESGEAudioTesterContainerViewControlPaneMiddleId,
+    ESGEAudioTesterContainerViewNumber1,
+    ESGEAudioTesterContainerViewNumber2,
+    ESGEAudioTesterContainerViewNumber3,
+    ESGEAudioTesterContainerViewNumber4,
+    ESGEAudioTesterContainerViewNumber5,
+    ESGEAudioTesterContainerViewNumber6,
+    ESGEAudioTesterContainerViewNumber7,
+    ESGEAudioTesterContainerViewNumber8,
+    ESGEAudioTesterContainerViewNumber9,
+    ESGEAudioTesterContainerViewHash,
+    ESGEAudioTesterContainerViewControlPaneMiddleId2,
+    ESGEAudioTesterContainerViewFile_1MenuItemCommand,
+    ESGEAudioTesterContainerViewFile_2MenuItemCommand,
+    ESGEAudioTesterContainerViewFile_3MenuItemCommand,
+    ESGEAudioTesterContainerViewFile_4MenuItemCommand,
+    ESGEAudioTesterContainerViewFile_5MenuItemCommand,
+    ESGEAudioTesterContainerViewFile_6MenuItemCommand,
+    ESGEAudioTesterContainerViewFile_7MenuItemCommand,
+    ESGEAudioTesterContainerViewFile_8MenuItemCommand,
+    ESGEAudioTesterContainerViewFile_9MenuItemCommand,
+    ESGEAudioTesterContainerViewAbout_MenuItemCommand
+    
+    };

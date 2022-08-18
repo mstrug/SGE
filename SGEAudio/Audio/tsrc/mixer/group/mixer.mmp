@@ -1,0 +1,42 @@
+/*
+============================================================================
+ Name		: mixer.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is the project specification file for mixer.
+============================================================================
+*/
+
+TARGET		  tmixer.exe
+TARGETTYPE	  exe
+UID			 0 0xEF4D5319
+
+USERINCLUDE  ..\inc
+USERINCLUDE   ..\..\..\inc
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+SOURCEPATH	  ..\src
+SOURCE		  mixer.cpp
+
+SOURCEPATH    ..\..\..\src
+SOURCE        SGEAudioConfig.cpp
+SOURCE        SGEAudioSample.cpp
+SOURCE        SGEAudioSoundTrack.cpp
+SOURCE        SGEAudioMixerBase.cpp
+SOURCE        SGEAudioMixerMono.cpp
+
+LIBRARY		 euser.lib
+LIBRARY      efsrv.lib 
+LIBRARY      estor.lib 
+LIBRARY      bafl.lib 
+LIBRARY      SGEFile_staticlib.lib 
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif

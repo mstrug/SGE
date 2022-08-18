@@ -1,0 +1,23 @@
+#
+# comment
+#
+
+[group1]
+tag1=123
+tag2=-123
+tag3=1,2
+tag4=1024,512
+tag5=8,12,100,200
+tag6=0
+tag7=1
+tag8 = 255, 0, 255
+tag8 = 32, 255, 0, 128
+tag9 = 1.42
+
+
+
+[group2]
+ tag1 =   value1	
+tag1 = value2  
+tag1 = value2  
+

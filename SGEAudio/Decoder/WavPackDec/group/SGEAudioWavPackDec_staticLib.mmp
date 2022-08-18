@@ -1,0 +1,32 @@
+/*
+============================================================================
+ Name		: wavPakDec.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is the project specification file for wavPakDec.
+============================================================================
+*/
+
+TARGET		  SGEAudioWavPackDec_staticlib.lib
+TARGETTYPE	  lib
+UID		  0x1000008d 0xE9E460D5
+
+EPOCHEAPSIZE 0x4000 0x400000  
+
+ALWAYS_BUILD_AS_ARM
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  unpackS.cpp 
+SOURCE		  metadataS.cpp 
+SOURCE		  bitsS.cpp  
+SOURCE		  wordsS.cpp 
+SOURCE		  floatS.cpp 
+SOURCE		  wputilsS.cpp 
+
+//LIBRARY		euser.lib efsrv.lib bafl.lib
+//STATICLIBRARY gcc_idiv.lib
+
+SOURCE SGEAudioWavPackDecoder.cpp

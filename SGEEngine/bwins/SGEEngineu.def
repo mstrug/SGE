@@ -1,0 +1,67 @@
+EXPORTS
+	??0CSGEEngine@@IAE@AAVMSGEEngineObserver@@PAVCSGEEngineCommonObjects@@@Z @ 1 NONAME ; CSGEEngine::CSGEEngine(class MSGEEngineObserver &, class CSGEEngineCommonObjects *)
+	??0CSGEEngine@@IAE@AAVMSGEEngineObserver@@PAVCSGEEngineCommonObjects@@VTSize@@W4TDisplayMode@@@Z @ 2 NONAME ; CSGEEngine::CSGEEngine(class MSGEEngineObserver &, class CSGEEngineCommonObjects *, class TSize, enum TDisplayMode)
+	??0CSGEEngineCommonObjects@@QAE@XZ @ 3 NONAME ; CSGEEngineCommonObjects::CSGEEngineCommonObjects(void)
+	??0CSGEEngineController@@IAE@AAVMSGEEngineControllerObserver@@VTSize@@@Z @ 4 NONAME ; CSGEEngineController::CSGEEngineController(class MSGEEngineControllerObserver &, class TSize)
+	??1CSGEEngine@@UAE@XZ @ 5 NONAME ; CSGEEngine::~CSGEEngine(void)
+	??1CSGEEngineCommonObjects@@UAE@XZ @ 6 NONAME ; CSGEEngineCommonObjects::~CSGEEngineCommonObjects(void)
+	??1CSGEEngineController@@UAE@XZ @ 7 NONAME ; CSGEEngineController::~CSGEEngineController(void)
+	?Activate@CSGEEngine@@UAEXXZ @ 8 NONAME ; void CSGEEngine::Activate(void)
+	?AddEngine@CSGEEngineController@@IAEHPAVCSGEEngine@@@Z @ 9 NONAME ; int CSGEEngineController::AddEngine(class CSGEEngine *)
+	?AudioAllFilesLoaded@CSGEEngine@@UAEXXZ @ 10 NONAME ; void CSGEEngine::AudioAllFilesLoaded(void)
+	?AudioFileLoaded@CSGEEngine@@UAEXHH@Z @ 11 NONAME ; void CSGEEngine::AudioFileLoaded(int, int)
+	?AudioProvider@CSGEEngineCommonObjects@@QBEPAVCSGEAudioProvider@@XZ @ 12 NONAME ; class CSGEAudioProvider * CSGEEngineCommonObjects::AudioProvider(void) const
+	?AudioSoundTrackPlayFinished@CSGEEngine@@UAEXI@Z @ 13 NONAME ; void CSGEEngine::AudioSoundTrackPlayFinished(unsigned int)
+	?AudioSoundTrackPlayStarted@CSGEEngine@@UAEXI@Z @ 14 NONAME ; void CSGEEngine::AudioSoundTrackPlayStarted(unsigned int)
+	?AudioStreamCreated@CSGEEngine@@UAEXH@Z @ 15 NONAME ; void CSGEEngine::AudioStreamCreated(int)
+	?AudioStreamError@CSGEEngine@@UAEXH@Z @ 16 NONAME ; void CSGEEngine::AudioStreamError(int)
+	?BaseConstructL@CSGEEngine@@IAEXXZ @ 17 NONAME ; void CSGEEngine::BaseConstructL(void)
+	?BaseConstructL@CSGEEngineController@@IAEXXZ @ 18 NONAME ; void CSGEEngineController::BaseConstructL(void)
+	?BitmapLoaded@CSGEEngine@@UAEXIH@Z @ 19 NONAME ; void CSGEEngine::BitmapLoaded(unsigned int, int)
+	?BitmapProvider@CSGEEngineCommonObjects@@QBEPAVCSGEBitmapProvider@@XZ @ 20 NONAME ; class CSGEBitmapProvider * CSGEEngineCommonObjects::BitmapProvider(void) const
+	?BitmapsLoadedAll@CSGEEngine@@UAEXXZ @ 21 NONAME ; void CSGEEngine::BitmapsLoadedAll(void)
+	?CreateCommonObjectsL@CSGEEngineController@@MAEPAVCSGEEngineCommonObjects@@XZ @ 22 NONAME ; class CSGEEngineCommonObjects * CSGEEngineController::CreateCommonObjectsL(void)
+	?CurrentEngine@CSGEEngineController@@IBEPAVCSGEEngine@@XZ @ 23 NONAME ; class CSGEEngine * CSGEEngineController::CurrentEngine(void) const
+	?Deactivate@CSGEEngine@@UAEXXZ @ 24 NONAME ; void CSGEEngine::Deactivate(void)
+	?DoSetCurrentEngine@CSGEEngineController@@MAEXXZ @ 25 NONAME ; void CSGEEngineController::DoSetCurrentEngine(void)
+	?Draw@CSGEEngineController@@QBEXPAVCBitmapContext@@VTRect@@@Z @ 26 NONAME ; void CSGEEngineController::Draw(class CBitmapContext *, class TRect) const
+	?EngineAdded@CSGEEngineController@@IBEHI@Z @ 27 NONAME ; int CSGEEngineController::EngineAdded(unsigned int) const
+	?EngineClose@CSGEEngineController@@MAEXIH@Z @ 28 NONAME ; void CSGEEngineController::EngineClose(unsigned int, int)
+	?EngineSwitch@CSGEEngineController@@MAEXI@Z @ 29 NONAME ; void CSGEEngineController::EngineSwitch(unsigned int)
+	?FileProvider@CSGEEngineCommonObjects@@QBEPAVCSGEFileProvider@@XZ @ 30 NONAME ; class CSGEFileProvider * CSGEEngineCommonObjects::FileProvider(void) const
+	?FontProvider@CSGEEngineCommonObjects@@QBEPAVCSGEFontProvider@@XZ @ 31 NONAME ; class CSGEFontProvider * CSGEEngineCommonObjects::FontProvider(void) const
+	?HandleForegroundEventL@CSGEEngineController@@QAEXH@Z @ 32 NONAME ; void CSGEEngineController::HandleForegroundEventL(int)
+	?HandleKeyEventL@CSGEEngineController@@QAE?AW4TKeyResponse@@ABUTKeyEvent@@W4TEventCode@@@Z @ 33 NONAME ; enum TKeyResponse CSGEEngineController::HandleKeyEventL(struct TKeyEvent const &, enum TEventCode)
+	?HandlePointerEventL@CSGEEngineController@@QAEHABUTPointerEvent@@@Z @ 34 NONAME ; int CSGEEngineController::HandlePointerEventL(struct TPointerEvent const &)
+	?KeyDownEvent@CSGEEngine@@UAEHABUTKeyEvent@@@Z @ 35 NONAME ; int CSGEEngine::KeyDownEvent(struct TKeyEvent const &)
+	?KeyEvent@CSGEEngine@@UAEHABUTKeyEvent@@@Z @ 36 NONAME ; int CSGEEngine::KeyEvent(struct TKeyEvent const &)
+	?KeyUpEvent@CSGEEngine@@UAEHABUTKeyEvent@@@Z @ 37 NONAME ; int CSGEEngine::KeyUpEvent(struct TKeyEvent const &)
+	?PointerEvent@CSGEEngine@@UAEHABUTPointerEvent@@@Z @ 38 NONAME ; int CSGEEngine::PointerEvent(struct TPointerEvent const &)
+	?SetAudioProvider@CSGEEngineCommonObjects@@QAEXPAVCSGEAudioProvider@@@Z @ 39 NONAME ; void CSGEEngineCommonObjects::SetAudioProvider(class CSGEAudioProvider *)
+	?SetBitmapProvider@CSGEEngineCommonObjects@@QAEXPAVCSGEBitmapProvider@@@Z @ 40 NONAME ; void CSGEEngineCommonObjects::SetBitmapProvider(class CSGEBitmapProvider *)
+	?SetCurrentEngine@CSGEEngineController@@IAEHI@Z @ 41 NONAME ; int CSGEEngineController::SetCurrentEngine(unsigned int)
+	?SetFileProvider@CSGEEngineCommonObjects@@QAEXPAVCSGEFileProvider@@@Z @ 42 NONAME ; void CSGEEngineCommonObjects::SetFileProvider(class CSGEFileProvider *)
+	?SetFontProvider@CSGEEngineCommonObjects@@QAEXPAVCSGEFontProvider@@@Z @ 43 NONAME ; void CSGEEngineCommonObjects::SetFontProvider(class CSGEFontProvider *)
+	?SetPause@CSGEEngine@@UAEXH@Z @ 44 NONAME ; void CSGEEngine::SetPause(int)
+	?SetStringProvider@CSGEEngineCommonObjects@@QAEXPAVCSGEStringProvider@@@Z @ 45 NONAME ; void CSGEEngineCommonObjects::SetStringProvider(class CSGEStringProvider *)
+	?SizeChanged@CSGEEngine@@UAEXVTSize@@@Z @ 46 NONAME ; void CSGEEngine::SizeChanged(class TSize)
+	?SizeChanged@CSGEEngineController@@QAEXVTSize@@@Z @ 47 NONAME ; void CSGEEngineController::SizeChanged(class TSize)
+	?StringProvider@CSGEEngineCommonObjects@@QBEPAVCSGEStringProvider@@XZ @ 48 NONAME ; class CSGEStringProvider * CSGEEngineCommonObjects::StringProvider(void) const
+	?Update@CSGEEngineController@@QAEHPAVCBitmapContext@@VTRect@@VTTimeIntervalMicroSeconds32@@@Z @ 49 NONAME ; int CSGEEngineController::Update(class CBitmapContext *, class TRect, class TTimeIntervalMicroSeconds32)
+	?Start@CSGEEngineGPTimer@@QAEXVTTimeIntervalMicroSeconds32@@H@Z @ 50 NONAME ABSENT ; void CSGEEngineGPTimer::Start(class TTimeIntervalMicroSeconds32, int)
+	?IsTimerLooped@CSGEEngineGPTimer@@QBEHXZ @ 51 NONAME ABSENT ; int CSGEEngineGPTimer::IsTimerLooped(void) const
+	??0CSGEEngineGPTimer@@AAE@AAVMSGEEngineGPTimerObserver@@@Z @ 52 NONAME ABSENT ; CSGEEngineGPTimer::CSGEEngineGPTimer(class MSGEEngineGPTimerObserver &)
+	??1CSGEEngineGPTimer@@UAE@XZ @ 53 NONAME ABSENT ; CSGEEngineGPTimer::~CSGEEngineGPTimer(void)
+	?Stop@CSGEEngineGPTimer@@QAEXXZ @ 54 NONAME ABSENT ; void CSGEEngineGPTimer::Stop(void)
+	?IsTimerStarted@CSGEEngineGPTimer@@QBEHXZ @ 55 NONAME ABSENT ; int CSGEEngineGPTimer::IsTimerStarted(void) const
+	?TextureCreated@CSGEEngine@@UAEXIH@Z @ 56 NONAME ; void CSGEEngine::TextureCreated(unsigned int, int)
+	?NewL@CSGEEngineGPTimer@@SAPAV1@AAVMSGEEngineGPTimerObserver@@@Z @ 57 NONAME ABSENT ; class CSGEEngineGPTimer * CSGEEngineGPTimer::NewL(class MSGEEngineGPTimerObserver &)
+	?ConstructL@CSGEEngineGPTimer@@AAEXXZ @ 58 NONAME ABSENT ; void CSGEEngineGPTimer::ConstructL(void)
+	?TimerTimeout@CSGEEngineGPTimer@@QBE?AVTTimeIntervalMicroSeconds32@@XZ @ 59 NONAME ABSENT ; class TTimeIntervalMicroSeconds32 CSGEEngineGPTimer::TimerTimeout(void) const
+	?NewLC@CSGEEngineGPTimer@@SAPAV1@AAVMSGEEngineGPTimerObserver@@@Z @ 60 NONAME ABSENT ; class CSGEEngineGPTimer * CSGEEngineGPTimer::NewLC(class MSGEEngineGPTimerObserver &)
+	?TexturesCreatedAll@CSGEEngine@@UAEXXZ @ 61 NONAME ; void CSGEEngine::TexturesCreatedAll(void)
+	?SetObserver@CSGEEngineGPTimer@@QAEXAAVMSGEEngineGPTimerObserver@@@Z @ 62 NONAME ABSENT ; void CSGEEngineGPTimer::SetObserver(class MSGEEngineGPTimerObserver &)
+	?SetApplication@CSGEEngineCommonObjects@@QAEXPAVCSGEApplication@@@Z @ 63 NONAME ; void CSGEEngineCommonObjects::SetApplication(class CSGEApplication *)
+	?CommonObjects@CSGEEngineController@@QBEAAVCSGEEngineCommonObjects@@XZ @ 64 NONAME ; class CSGEEngineCommonObjects & CSGEEngineController::CommonObjects(void) const
+	?Application@CSGEEngineCommonObjects@@QBEPAVCSGEApplication@@XZ @ 65 NONAME ; class CSGEApplication * CSGEEngineCommonObjects::Application(void) const
+

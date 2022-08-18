@@ -1,0 +1,22 @@
+CHARACTER_SET UTF8
+
+// ELangEnglish
+
+#define qtn_loc_application_name "SGEGameTemplate"
+
+//=========================================================================
+//	ENGINE 1 GLOBALS
+//=========================================================================
+
+#define qtn_loc_engine_1_text "Engine 1"
+
+//=========================================================================
+//	ENGINE 2 GLOBALS
+//=========================================================================
+
+#define qtn_loc_engine_2_text "Engine 2"
+
+
+
+// End of file
+

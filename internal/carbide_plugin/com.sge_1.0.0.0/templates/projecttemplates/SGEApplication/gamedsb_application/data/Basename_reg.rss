@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+  Name        : $(baseName)_reg.rss
+  Author      : $(author)
+  Company     : $(company)
+  Version     : $(version)
+  Copyright   : $(copyright)
+  Description : 
+ ============================================================================
+ */
+
+#include <appinfo.rh>
+#include <$(baseName).rsg>
+#include "$(baseName).rls"
+
+UID2 KUidAppRegistrationResourceFile
+UID3 $(uid3)
+
+RESOURCE APP_REGISTRATION_INFO
+    {
+    app_file = "$(baseName)";
+    localisable_resource_file = qtn_loc_resource_file_1;
+    localisable_resource_id = R_LOCALISABLE_APP_INFO;
+
+    embeddability = KAppNotEmbeddable;
+    newfile = KAppDoesNotSupportNewFile;
+    }
+

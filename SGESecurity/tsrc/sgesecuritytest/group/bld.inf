@@ -1,0 +1,17 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../data/cookie.dat /epoc32/winscw/c/private/EF4af310/drm/data/cookie.dat
+
+PRJ_MMPFILES
+sgesecuritytest.mmp

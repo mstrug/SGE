@@ -1,0 +1,47 @@
+EXPORTS
+	_ZN10CEglDevice4NewLEv @ 1 NONAME
+	_ZN10CEglDevice5NewLCEv @ 2 NONAME
+	_ZN10CEglDevice9ConfigureEPKiS1_ @ 3 NONAME
+	_ZN10CEglDevice9ConfigureEiii @ 4 NONAME
+	_ZN10CEglDevice9ConfigureEiiiiiiiiii @ 5 NONAME
+	_ZN10CEglDeviceD0Ev @ 6 NONAME
+	_ZN10CEglDeviceD1Ev @ 7 NONAME
+	_ZN10CEglDeviceD2Ev @ 8 NONAME
+	_ZN11CEglSurfaceD0Ev @ 9 NONAME
+	_ZN11CEglSurfaceD1Ev @ 10 NONAME
+	_ZN11CEglSurfaceD2Ev @ 11 NONAME
+	_ZN17CEglSurfacePixmap4NewLERK10CEglDeviceP9CWsBitmap @ 12 NONAME
+	_ZN17CEglSurfacePixmap5NewLCERK10CEglDeviceP9CWsBitmap @ 13 NONAME
+	_ZN17CEglSurfacePixmapD0Ev @ 14 NONAME
+	_ZN17CEglSurfacePixmapD1Ev @ 15 NONAME
+	_ZN17CEglSurfacePixmapD2Ev @ 16 NONAME
+	_ZN17CEglSurfaceWindow11SwapBuffersEv @ 17 NONAME
+	_ZN17CEglSurfaceWindow4NewLERK10CEglDeviceR7RWindow @ 18 NONAME
+	_ZN17CEglSurfaceWindow5NewLCERK10CEglDeviceR7RWindow @ 19 NONAME
+	_ZN17CEglSurfaceWindowD0Ev @ 20 NONAME
+	_ZN17CEglSurfaceWindowD1Ev @ 21 NONAME
+	_ZN17CEglSurfaceWindowD2Ev @ 22 NONAME
+	_ZN18CEglSurfacePbuffer11CopyBuffersEP9CWsBitmap @ 23 NONAME
+	_ZN18CEglSurfacePbuffer13BindToTextureEv @ 24 NONAME
+	_ZN18CEglSurfacePbuffer18ReleaseFromTextureEv @ 25 NONAME
+	_ZN18CEglSurfacePbuffer4NewLERK10CEglDevice5TSizeiiii @ 26 NONAME ABSENT
+	_ZN18CEglSurfacePbuffer5NewLCERK10CEglDevice5TSizeiiii @ 27 NONAME ABSENT
+	_ZN18CEglSurfacePbufferD0Ev @ 28 NONAME
+	_ZN18CEglSurfacePbufferD1Ev @ 29 NONAME
+	_ZN18CEglSurfacePbufferD2Ev @ 30 NONAME
+	_ZN6CEglRc11MakeCurrentER11CEglSurface @ 31 NONAME
+	_ZN6CEglRc11MakeCurrentER11CEglSurfaceS1_ @ 32 NONAME
+	_ZN6CEglRc4NewLERK10CEglDevice @ 33 NONAME
+	_ZN6CEglRc5NewLCERK10CEglDevice @ 34 NONAME
+	_ZN6CEglRcD0Ev @ 35 NONAME
+	_ZN6CEglRcD1Ev @ 36 NONAME
+	_ZN6CEglRcD2Ev @ 37 NONAME
+	_ZNK10CEglDevice6ConfigEv @ 38 NONAME
+	_ZNK10CEglDevice7DisplayEv @ 39 NONAME
+	_ZNK11CEglSurface7SurfaceEv @ 40 NONAME
+	_ZN18CEglSurfacePbuffer11MakeCurrentEv @ 41 NONAME
+	_ZNK18CEglSurfacePbuffer4SizeEv @ 42 NONAME
+	_ZN18CEglSurfacePbuffer4NewLERK10CEglDevice5TSizeiiiii @ 43 NONAME
+	_ZN18CEglSurfacePbuffer5NewLCERK10CEglDevice5TSizeiiiii @ 44 NONAME
+	_ZNK6CEglRc2RCEv @ 45 NONAME
+

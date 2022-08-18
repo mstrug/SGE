@@ -1,0 +1,19 @@
+#
+# comment
+#
+
+[group1]
+# comment
+tag1=value1
+# comment
+tag2 = value2
+# comment
+tag3 = value3
+
+
+[group2]
+ tag1 =   value1	
+tag2 = value2  
+tag3=
+tag4=v,.%5#@$alue 4
+

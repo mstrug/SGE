@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <!-- PROJECT WIZARDS -->
+   <extension point="com.nokia.carbide.templatewizard.wizardTemplate">
+
+      <template
+            displayName = "SGEApplication basic"
+            filterArguments="S60:3.0-5.9"
+            groupLabel="SGE"
+            image="icons/my_q3.gif"
+            location="templates/projecttemplates/SGEApplication/basic_application/template.xml"
+            templateId="com.sge.templates.s60.SGEApplication.basic_application"
+            wizardId="com.nokia.carbide.cpp.project.ui.wizards.NewSymbianOSCppProjectWizard"/>
+
+      <template
+            displayName = "SGEGameApplication Direct Screen Access"
+            filterArguments="S60:3.0-5.9"
+            groupLabel="SGE"
+            image="icons/my_q3.gif"
+            location="templates/projecttemplates/SGEApplication/gameds_application/template.xml"
+            templateId="com.sge.templates.s60.SGEApplication.gameds_application"
+            wizardId="com.nokia.carbide.cpp.project.ui.wizards.NewSymbianOSCppProjectWizard"/>
+
+      <template
+            displayName = "SGEGameApplication Direct Screen Bitmap"
+            filterArguments="S60:3.0-5.9"
+            groupLabel="SGE"
+            image="icons/my_q3.gif"
+            location="templates/projecttemplates/SGEApplication/gamedsb_application/template.xml"
+            templateId="com.sge.templates.s60.SGEApplication.gamedsb_application"
+            wizardId="com.nokia.carbide.cpp.project.ui.wizards.NewSymbianOSCppProjectWizard"/>
+
+      <template
+            displayName = "SGEGameApplication OpenGL ES"
+            filterArguments="S60:3.0-5.9"
+            groupLabel="SGE"
+            image="icons/my_q3.gif"
+            location="templates/projecttemplates/SGEApplication/gamegl_application/template.xml"
+            templateId="com.sge.templates.s60.SGEApplication.gamegl_application"
+            wizardId="com.nokia.carbide.cpp.project.ui.wizards.NewSymbianOSCppProjectWizard"/>
+
+      <template
+            displayName = "SGEGameApplication OpenVG"
+            filterArguments="S60:3.0-5.9"
+            groupLabel="SGE"
+            image="icons/my_q3.gif"
+            location="templates/projecttemplates/SGEApplication/gamevg_application/template.xml"
+            templateId="com.sge.templates.s60.SGEApplication.gamevg_application"
+            wizardId="com.nokia.carbide.cpp.project.ui.wizards.NewSymbianOSCppProjectWizard"/>
+
+   </extension>
+</plugin>

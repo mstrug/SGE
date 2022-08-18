@@ -1,0 +1,92 @@
+EXPORTS
+	?GameLoopMaxFPS@CSGEGameApplication@@UBEIXZ @ 1 NONAME ; unsigned int CSGEGameApplication::GameLoopMaxFPS(void) const
+	?PlaySystemSound@CSGEApplication@@QAEXH@Z @ 2 NONAME ; void CSGEApplication::PlaySystemSound(int)
+	?HandleForegroundEventL@CSGEApplication@@UAEXH@Z @ 3 NONAME ; void CSGEApplication::HandleForegroundEventL(int)
+	?NewL@CEglSurfacePbuffer@@SAPAV1@ABVCEglDevice@@VTSize@@HHHHH@Z @ 4 NONAME ; class CEglSurfacePbuffer * CEglSurfacePbuffer::NewL(class CEglDevice const &, class TSize, int, int, int, int, int)
+	?MakeCurrent@CEglRc@@QAEHAAVCEglSurface@@@Z @ 5 NONAME ; int CEglRc::MakeCurrent(class CEglSurface &)
+	?Configure@CEglDevice@@QAEHPBH0@Z @ 6 NONAME ; int CEglDevice::Configure(int const *, int const *)
+	?SetGameLoopMaxFPS@CSGEGameApplication@@UAEXI@Z @ 7 NONAME ; void CSGEGameApplication::SetGameLoopMaxFPS(unsigned int)
+	?NewL@CEglRc@@SAPAV1@ABVCEglDevice@@@Z @ 8 NONAME ; class CEglRc * CEglRc::NewL(class CEglDevice const &)
+	?SilentKeys@CSGEApplication@@UBEHXZ @ 9 NONAME ; int CSGEApplication::SilentKeys(void) const
+	?BlockKeys@CSGEGameApplication@@UBEHXZ @ 10 NONAME ; int CSGEGameApplication::BlockKeys(void) const
+	?StartGameLoop@CSGEGameApplication@@UAEXXZ @ 11 NONAME ; void CSGEGameApplication::StartGameLoop(void)
+	?HandleResourceChange@CSGEApplication@@UAEXH@Z @ 12 NONAME ; void CSGEApplication::HandleResourceChange(int)
+	?ProcessCommandParametersL@CSGEApplication@@UAEHW4TApaCommand@@AAV?$TBuf@$0BAA@@@ABVTDesC8@@@Z @ 13 NONAME ; int CSGEApplication::ProcessCommandParametersL(enum TApaCommand, class TBuf<256> &, class TDesC8 const &)
+	?HandleForegroundEventL@CSGEGameApplication@@MAEXH@Z @ 14 NONAME ; void CSGEGameApplication::HandleForegroundEventL(int)
+	?NewLC@CEglSurfacePbuffer@@SAPAV1@ABVCEglDevice@@VTSize@@HHHHH@Z @ 15 NONAME ; class CEglSurfacePbuffer * CEglSurfacePbuffer::NewLC(class CEglDevice const &, class TSize, int, int, int, int, int)
+	??1CEglRc@@UAE@XZ @ 16 NONAME ; CEglRc::~CEglRc(void)
+	?NewL@CEglDevice@@SAPAV1@XZ @ 17 NONAME ; class CEglDevice * CEglDevice::NewL(void)
+	?HandleWsEventL@CSGEApplication@@UAEHABVTWsEvent@@PAVCCoeControl@@@Z @ 18 NONAME ; int CSGEApplication::HandleWsEventL(class TWsEvent const &, class CCoeControl *)
+	?CreateAppViewL@CSGEGameApplicationDSB@@UAEPAVCSGESystemAppView@@VTRect@@@Z @ 19 NONAME ; class CSGESystemAppView * CSGEGameApplicationDSB::CreateAppViewL(class TRect)
+	?StopGameLoop@CSGEGameApplication@@UAEXXZ @ 20 NONAME ; void CSGEGameApplication::StopGameLoop(void)
+	?Config@CEglDevice@@QBEHXZ @ 21 NONAME ; int CEglDevice::Config(void) const
+	?MakeCurrent@CEglRc@@QAEHAAVCEglSurface@@0@Z @ 22 NONAME ; int CEglRc::MakeCurrent(class CEglSurface &, class CEglSurface &)
+	?MakeCurrent@CEglSurfacePbuffer@@QAEHXZ @ 23 NONAME ; int CEglSurfacePbuffer::MakeCurrent(void)
+	?GameLoopEvent@CSGEGameApplication@@UAEXXZ @ 24 NONAME ; void CSGEGameApplication::GameLoopEvent(void)
+	??1CEglSurfacePbuffer@@UAE@XZ @ 25 NONAME ; CEglSurfacePbuffer::~CEglSurfacePbuffer(void)
+	??0CSGEApplication@@IAE@XZ @ 26 NONAME ; CSGEApplication::CSGEApplication(void)
+	?SwapBuffers@CEglSurfaceWindow@@QAEHXZ @ 27 NONAME ; int CEglSurfaceWindow::SwapBuffers(void)
+	??1CEglSurface@@UAE@XZ @ 28 NONAME ; CEglSurface::~CEglSurface(void)
+	?Size@CSGEGameApplicationGL@@QBE?AVTSize@@XZ @ 29 NONAME ; class TSize CSGEGameApplicationGL::Size(void) const
+	?NewApplication@CSGEApplication@@KAPAVCApaApplication@@PAV1@@Z @ 30 NONAME ; class CApaApplication * CSGEApplication::NewApplication(class CSGEApplication *)
+	?SystemGc@CSGEApplication@@QBEAAVCWindowGc@@XZ @ 31 NONAME ; class CWindowGc & CSGEApplication::SystemGc(void) const
+	?ReleaseFromTexture@CEglSurfacePbuffer@@QAEHXZ @ 32 NONAME ; int CEglSurfacePbuffer::ReleaseFromTexture(void)
+	?ApplicationFlags@CSGEApplication@@UBEHXZ @ 33 NONAME ; int CSGEApplication::ApplicationFlags(void) const
+	?CreateAppViewL@CSGEGameApplicationDS@@UAEPAVCSGESystemAppView@@VTRect@@@Z @ 34 NONAME ; class CSGESystemAppView * CSGEGameApplicationDS::CreateAppViewL(class TRect)
+	?HandleStatusPaneSizeChange@CSGEApplication@@UAEXXZ @ 35 NONAME ; void CSGEApplication::HandleStatusPaneSizeChange(void)
+	??1CEglSurfaceWindow@@UAE@XZ @ 36 NONAME ; CEglSurfaceWindow::~CEglSurfaceWindow(void)
+	??0CSGEGameApplication@@QAE@XZ @ 37 NONAME ; CSGEGameApplication::CSGEGameApplication(void)
+	?NewL@CEglSurfacePixmap@@SAPAV1@ABVCEglDevice@@PAVCWsBitmap@@@Z @ 38 NONAME ; class CEglSurfacePixmap * CEglSurfacePixmap::NewL(class CEglDevice const &, class CWsBitmap *)
+	?GameLoopFPS@CSGEGameApplication@@UBEIXZ @ 39 NONAME ; unsigned int CSGEGameApplication::GameLoopFPS(void) const
+	?BindToTexture@CEglSurfacePbuffer@@QAEHXZ @ 40 NONAME ; int CEglSurfacePbuffer::BindToTexture(void)
+	?SizeChanged@CSGEApplication@@UAEXXZ @ 41 NONAME ; void CSGEApplication::SizeChanged(void)
+	?SurfaceType@CSGEGameApplicationGL@@MAE?AW4TEglSurfaceType@1@XZ @ 42 NONAME ; enum CSGEGameApplicationGL::TEglSurfaceType CSGEGameApplicationGL::SurfaceType(void)
+	?GoBackgroundOnEndKey@CSGEGameApplication@@UBEHXZ @ 43 NONAME ; int CSGEGameApplication::GoBackgroundOnEndKey(void) const
+	?Draw@CSGEApplication@@UBEXABVTRect@@@Z @ 44 NONAME ; void CSGEApplication::Draw(class TRect const &) const
+	?RC@CEglRc@@QBE?BHXZ @ 45 NONAME ; int const CEglRc::RC(void) const
+	?NewLC@CEglSurfaceWindow@@SAPAV1@ABVCEglDevice@@AAVRWindow@@@Z @ 46 NONAME ; class CEglSurfaceWindow * CEglSurfaceWindow::NewLC(class CEglDevice const &, class RWindow &)
+	?WsBitmap@CSGEGameApplicationGL@@UAEPAVCWsBitmap@@XZ @ 47 NONAME ; class CWsBitmap * CSGEGameApplicationGL::WsBitmap(void)
+	?SetOrientationL@CSGEApplication@@QAEXW4TAppUiOrientation@CAknAppUiBase@@@Z @ 48 NONAME ; void CSGEApplication::SetOrientationL(enum CAknAppUiBase::TAppUiOrientation)
+	?CreateAppViewL@CSGEGameApplicationGL@@UAEPAVCSGESystemAppView@@VTRect@@@Z @ 49 NONAME ; class CSGESystemAppView * CSGEGameApplicationGL::CreateAppViewL(class TRect)
+	?NewL@CEglSurfaceWindow@@SAPAV1@ABVCEglDevice@@AAVRWindow@@@Z @ 50 NONAME ; class CEglSurfaceWindow * CEglSurfaceWindow::NewL(class CEglDevice const &, class RWindow &)
+	?EglDevice@CSGEGameApplicationGL@@QBEPAVCEglDevice@@XZ @ 51 NONAME ; class CEglDevice * CSGEGameApplicationGL::EglDevice(void) const
+	?Surface@CEglSurface@@QBEHXZ @ 52 NONAME ; int CEglSurface::Surface(void) const
+	?Size@CEglSurfacePbuffer@@QBE?AVTSize@@XZ @ 53 NONAME ; class TSize CEglSurfacePbuffer::Size(void) const
+	?DrawNow@CSGEApplication@@QBEXXZ @ 54 NONAME ; void CSGEApplication::DrawNow(void) const
+	?Orientation@CSGEApplication@@UBE?AW4TSGEApplicationOrientation@@XZ @ 55 NONAME ; enum TSGEApplicationOrientation CSGEApplication::Orientation(void) const
+	?HandleKeyEventL@CSGEApplication@@UAE?AW4TKeyResponse@@ABUTKeyEvent@@W4TEventCode@@@Z @ 56 NONAME ; enum TKeyResponse CSGEApplication::HandleKeyEventL(struct TKeyEvent const &, enum TEventCode)
+	??1CEglSurfacePixmap@@UAE@XZ @ 57 NONAME ; CEglSurfacePixmap::~CEglSurfacePixmap(void)
+	?Exit@CSGEApplication@@QAEXXZ @ 58 NONAME ; void CSGEApplication::Exit(void)
+	?HandlePointerEventL@CSGEApplication@@UAEHABUTPointerEvent@@@Z @ 59 NONAME ; int CSGEApplication::HandlePointerEventL(struct TPointerEvent const &)
+	?NewLC@CEglDevice@@SAPAV1@XZ @ 60 NONAME ; class CEglDevice * CEglDevice::NewLC(void)
+	?WsSession@CSGEApplication@@QBEAAVRWsSession@@XZ @ 61 NONAME ; class RWsSession & CSGEApplication::WsSession(void) const
+	?Window@CSGEApplication@@QBEAAVRWindow@@XZ @ 62 NONAME ; class RWindow & CSGEApplication::Window(void) const
+	?FsSession@CSGEApplication@@QBEAAVRFs@@XZ @ 63 NONAME ; class RFs & CSGEApplication::FsSession(void) const
+	?NewLC@CEglSurfacePixmap@@SAPAV1@ABVCEglDevice@@PAVCWsBitmap@@@Z @ 64 NONAME ; class CEglSurfacePixmap * CEglSurfacePixmap::NewLC(class CEglDevice const &, class CWsBitmap *)
+	?EglRenderingContext@CSGEGameApplicationGL@@QBEPAVCEglRc@@XZ @ 65 NONAME ; class CEglRc * CSGEGameApplicationGL::EglRenderingContext(void) const
+	?GameLoopStarted@CSGEGameApplication@@UAEHXZ @ 66 NONAME ; int CSGEGameApplication::GameLoopStarted(void)
+	?Configure@CEglDevice@@QAEHHHH@Z @ 67 NONAME ; int CEglDevice::Configure(int, int, int)
+	?EglSurface@CSGEGameApplicationGL@@QBEPAVCEglSurface@@XZ @ 68 NONAME ; class CEglSurface * CSGEGameApplicationGL::EglSurface(void) const
+	?HandleCommandL@CSGEApplication@@UAEXH@Z @ 69 NONAME ; void CSGEApplication::HandleCommandL(int)
+	?NewLC@CEglRc@@SAPAV1@ABVCEglDevice@@@Z @ 70 NONAME ; class CEglRc * CEglRc::NewLC(class CEglDevice const &)
+	?Rect@CSGEApplication@@QBE?AVTRect@@XZ @ 71 NONAME ; class TRect CSGEApplication::Rect(void) const
+	?MakeCurrentWindowEglContext@CSGEGameApplicationGL@@QAEHXZ @ 72 NONAME ; int CSGEGameApplicationGL::MakeCurrentWindowEglContext(void)
+	?AlertWin@CSGEApplication@@QAEXABVTDesC16@@0@Z @ 73 NONAME ; void CSGEApplication::AlertWin(class TDesC16 const &, class TDesC16 const &)
+	?Start@CSGEApplication@@SAHP6APAVCApaApplication@@XZ@Z @ 74 NONAME ; int CSGEApplication::Start(class CApaApplication * (*)(void))
+	?GameLoopEvent@CSGEGameApplicationDS@@UAEXXZ @ 75 NONAME ; void CSGEGameApplicationDS::GameLoopEvent(void)
+	?Display@CEglDevice@@QBEHXZ @ 76 NONAME ; int CEglDevice::Display(void) const
+	?Gc@CSGEGameApplicationDS@@QBEPAVCFbsBitGc@@XZ @ 77 NONAME ; class CFbsBitGc * CSGEGameApplicationDS::Gc(void) const
+	?GameLoopEvent@CSGEGameApplicationGL@@UAEXXZ @ 78 NONAME ; void CSGEGameApplicationGL::GameLoopEvent(void)
+	?FullScreen@CSGEApplication@@UBEHXZ @ 79 NONAME ; int CSGEApplication::FullScreen(void) const
+	?Size@CSGEGameApplicationDS@@QBE?AVTSize@@XZ @ 80 NONAME ; class TSize CSGEGameApplicationDS::Size(void) const
+	??1CEglDevice@@UAE@XZ @ 81 NONAME ; CEglDevice::~CEglDevice(void)
+	?CreateAppUiL@CSGEApplication@@UAEPAVCSGESystemAppUi@@XZ @ 82 NONAME ; class CSGESystemAppUi * CSGEApplication::CreateAppUiL(void)
+	?CreateAppUiL@CSGEGameApplication@@UAEPAVCSGESystemAppUi@@XZ @ 83 NONAME ; class CSGESystemAppUi * CSGEGameApplication::CreateAppUiL(void)
+	?DisplayMode@CSGEGameApplicationDS@@QBE?AW4TDisplayMode@@XZ @ 84 NONAME ; enum TDisplayMode CSGEGameApplicationDS::DisplayMode(void) const
+	?Configure@CEglDevice@@QAEHHHHHHHHHHH@Z @ 85 NONAME ; int CEglDevice::Configure(int, int, int, int, int, int, int, int, int, int)
+	?InitL@CSGEGameApplication@@UAEXXZ @ 86 NONAME ; void CSGEGameApplication::InitL(void)
+	??1CSGEApplication@@UAE@XZ @ 87 NONAME ; CSGEApplication::~CSGEApplication(void)
+	??1CSGEGameApplication@@UAE@XZ @ 88 NONAME ; CSGEGameApplication::~CSGEGameApplication(void)
+	?CreateAppViewL@CSGEApplication@@UAEPAVCSGESystemAppView@@VTRect@@@Z @ 89 NONAME ; class CSGESystemAppView * CSGEApplication::CreateAppViewL(class TRect)
+	?CopyBuffers@CEglSurfacePbuffer@@QAEHPAVCWsBitmap@@@Z @ 90 NONAME ; int CEglSurfacePbuffer::CopyBuffers(class CWsBitmap *)
+

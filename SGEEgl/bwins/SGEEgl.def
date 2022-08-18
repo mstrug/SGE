@@ -1,0 +1,35 @@
+EXPORTS
+	??1CEglDevice@@UAE@XZ @ 1 NONAME ; CEglDevice::~CEglDevice(void)
+	??1CEglRc@@UAE@XZ @ 2 NONAME ; CEglRc::~CEglRc(void)
+	??1CEglSurface@@UAE@XZ @ 3 NONAME ; CEglSurface::~CEglSurface(void)
+	??1CEglSurfacePbuffer@@UAE@XZ @ 4 NONAME ; CEglSurfacePbuffer::~CEglSurfacePbuffer(void)
+	??1CEglSurfacePixmap@@UAE@XZ @ 5 NONAME ; CEglSurfacePixmap::~CEglSurfacePixmap(void)
+	??1CEglSurfaceWindow@@UAE@XZ @ 6 NONAME ; CEglSurfaceWindow::~CEglSurfaceWindow(void)
+	?BindToTexture@CEglSurfacePbuffer@@QAEHXZ @ 7 NONAME ; int CEglSurfacePbuffer::BindToTexture(void)
+	?Config@CEglDevice@@QBEHXZ @ 8 NONAME ; int CEglDevice::Config(void) const
+	?Configure@CEglDevice@@QAEHHHH@Z @ 9 NONAME ; int CEglDevice::Configure(int, int, int)
+	?Configure@CEglDevice@@QAEHHHHHHHHHHH@Z @ 10 NONAME ; int CEglDevice::Configure(int, int, int, int, int, int, int, int, int, int)
+	?Configure@CEglDevice@@QAEHPBH0@Z @ 11 NONAME ; int CEglDevice::Configure(int const *, int const *)
+	?CopyBuffers@CEglSurfacePbuffer@@QAEHPAVCWsBitmap@@@Z @ 12 NONAME ; int CEglSurfacePbuffer::CopyBuffers(class CWsBitmap *)
+	?Display@CEglDevice@@QBEHXZ @ 13 NONAME ; int CEglDevice::Display(void) const
+	?MakeCurrent@CEglRc@@QAEHAAVCEglSurface@@0@Z @ 14 NONAME ; int CEglRc::MakeCurrent(class CEglSurface &, class CEglSurface &)
+	?MakeCurrent@CEglRc@@QAEHAAVCEglSurface@@@Z @ 15 NONAME ; int CEglRc::MakeCurrent(class CEglSurface &)
+	?NewL@CEglDevice@@SAPAV1@XZ @ 16 NONAME ; class CEglDevice * CEglDevice::NewL(void)
+	?NewL@CEglRc@@SAPAV1@ABVCEglDevice@@@Z @ 17 NONAME ; class CEglRc * CEglRc::NewL(class CEglDevice const &)
+	?NewL@CEglSurfacePbuffer@@SAPAV1@ABVCEglDevice@@VTSize@@HHHH@Z @ 18 NONAME ABSENT ; class CEglSurfacePbuffer * CEglSurfacePbuffer::NewL(class CEglDevice const &, class TSize, int, int, int, int)
+	?NewL@CEglSurfacePixmap@@SAPAV1@ABVCEglDevice@@PAVCWsBitmap@@@Z @ 19 NONAME ; class CEglSurfacePixmap * CEglSurfacePixmap::NewL(class CEglDevice const &, class CWsBitmap *)
+	?NewL@CEglSurfaceWindow@@SAPAV1@ABVCEglDevice@@AAVRWindow@@@Z @ 20 NONAME ; class CEglSurfaceWindow * CEglSurfaceWindow::NewL(class CEglDevice const &, class RWindow &)
+	?NewLC@CEglDevice@@SAPAV1@XZ @ 21 NONAME ; class CEglDevice * CEglDevice::NewLC(void)
+	?NewLC@CEglRc@@SAPAV1@ABVCEglDevice@@@Z @ 22 NONAME ; class CEglRc * CEglRc::NewLC(class CEglDevice const &)
+	?NewLC@CEglSurfacePbuffer@@SAPAV1@ABVCEglDevice@@VTSize@@HHHH@Z @ 23 NONAME ABSENT ; class CEglSurfacePbuffer * CEglSurfacePbuffer::NewLC(class CEglDevice const &, class TSize, int, int, int, int)
+	?NewLC@CEglSurfacePixmap@@SAPAV1@ABVCEglDevice@@PAVCWsBitmap@@@Z @ 24 NONAME ; class CEglSurfacePixmap * CEglSurfacePixmap::NewLC(class CEglDevice const &, class CWsBitmap *)
+	?NewLC@CEglSurfaceWindow@@SAPAV1@ABVCEglDevice@@AAVRWindow@@@Z @ 25 NONAME ; class CEglSurfaceWindow * CEglSurfaceWindow::NewLC(class CEglDevice const &, class RWindow &)
+	?ReleaseFromTexture@CEglSurfacePbuffer@@QAEHXZ @ 26 NONAME ; int CEglSurfacePbuffer::ReleaseFromTexture(void)
+	?Surface@CEglSurface@@QBEHXZ @ 27 NONAME ; int CEglSurface::Surface(void) const
+	?SwapBuffers@CEglSurfaceWindow@@QAEHXZ @ 28 NONAME ; int CEglSurfaceWindow::SwapBuffers(void)
+	?Size@CEglSurfacePbuffer@@QBE?AVTSize@@XZ @ 29 NONAME ; class TSize CEglSurfacePbuffer::Size(void) const
+	?MakeCurrent@CEglSurfacePbuffer@@QAEHXZ @ 30 NONAME ; int CEglSurfacePbuffer::MakeCurrent(void)
+	?NewL@CEglSurfacePbuffer@@SAPAV1@ABVCEglDevice@@VTSize@@HHHHH@Z @ 31 NONAME ; class CEglSurfacePbuffer * CEglSurfacePbuffer::NewL(class CEglDevice const &, class TSize, int, int, int, int, int)
+	?NewLC@CEglSurfacePbuffer@@SAPAV1@ABVCEglDevice@@VTSize@@HHHHH@Z @ 32 NONAME ; class CEglSurfacePbuffer * CEglSurfacePbuffer::NewLC(class CEglDevice const &, class TSize, int, int, int, int, int)
+	?RC@CEglRc@@QBE?BHXZ @ 33 NONAME ; int const CEglRc::RC(void) const
+

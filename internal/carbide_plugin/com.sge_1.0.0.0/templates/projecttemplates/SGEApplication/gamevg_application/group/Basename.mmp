@@ -1,0 +1,58 @@
+/*
+ ============================================================================
+  Name	      : $(baseName).mmp
+  Author      : $(author)
+  Company     : $(company)
+  Version     : $(version)
+  Copyright   : $(copyright)
+  Description : This is the project specification file for $(baseName).
+ ============================================================================
+ */
+
+TARGET $(baseName)_$(uid3).exe
+TARGETTYPE exe
+
+UID 0x100039CE $(uid3)
+VENDORID 0
+SECUREID $(uid3)
+
+LANG SC
+
+CAPABILITY NONE
+
+SOURCEPATH     ..\$(sourceDir)
+SOURCE         $(baseName).cpp
+SOURCE         $(baseName)Application.cpp 
+
+SOURCEPATH     ..\$(dataDir)
+START RESOURCE $(baseName).rss
+HEADER
+TARGET $(baseName)_$(uid3)
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE $(baseName)_reg.rss
+TARGET $(baseName)_$(uid3)_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+USERINCLUDE    ..\$(incDir)
+SYSTEMINCLUDE  \epoc32\include
+SYSTEMINCLUDE  \epoc32\include\mw
+SYSTEMINCLUDE  \epoc32\include\app
+SYSTEMINCLUDE  \epoc32\include\platform
+SYSTEMINCLUDE  \epoc32\include\platform\app
+SYSTEMINCLUDE  \epoc32\include\platform\mw
+SYSTEMINCLUDE  \epoc32\include\SGE
+
+LIBRARY		   libopenvg.lib libopenvgu.lib libegl.lib
+LIBRARY            eikcore.lib avkon.lib apparc.lib cone.lib euser.lib estor.lib efsrv.lib bafl.lib ws32.lib bitgdi.lib fbscli.lib hal.lib libgles_cm.lib scdv.lib RemConCoreApi.lib RemConInterfaceBase.lib
+STATICLIBRARY	   SGEEgl_staticlib.lib
+STATICLIBRARY	   SGEApplication_staticlib.lib
+ 
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+

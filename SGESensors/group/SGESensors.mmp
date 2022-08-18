@@ -1,0 +1,48 @@
+/*
+ ============================================================================
+  Name        : SGESensors.mmp
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+TARGET            SGESensors.dll
+TARGETTYPE        dll
+UID               0x1000008d 0x0261F731
+
+SOURCEPATH        ..\src
+SOURCE 		  SGESensorBase.cpp 
+SOURCE 		  SGESensorAccelerometer.cpp 
+SOURCE 		  SGESensorOrientation.cpp 
+SOURCE 		  SGESensorRotation.cpp SGESensorShake.cpp
+
+
+USERINCLUDE       ..\inc
+SYSTEMINCLUDE     \epoc32\include 
+SYSTEMINCLUDE     \epoc32\include\SGE
+SYSTEMINCLUDE     \epoc32\include\SGE\SGESensors
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+
+LIBRARY	       euser.lib eikcore.lib cone.lib apparc.lib avkon.lib ws32.lib bitgdi.lib fbscli.lib hal.lib
+#ifndef __S60_3X__ // uncomment for Symaibn^3
+ LIBRARY	       sensrvclient.lib sensrvutil.lib
+#endif 
+
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+
+CAPABILITY NetworkServices
+
+//OPTION GCC -Wno-invalid-offsetof
+//OPTION GCC -w
+
+EXPORTUNFROZEN

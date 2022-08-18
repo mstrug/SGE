@@ -1,0 +1,58 @@
+/*
+============================================================================
+ Name		: sgeegl1.mmp
+ Author	  	: Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description 	: 
+============================================================================
+*/
+
+
+TARGET			sgeegl1.exe
+TARGETTYPE		exe
+UID		        0x100039CE 0xE22B50Ad
+
+SOURCEPATH		..\src
+SOURCE			myapplication.cpp
+SOURCE 			sgeegl1.cpp
+
+
+
+SOURCEPATH		..\data
+
+START RESOURCE	sgeegl1.rss
+HEADER
+TARGET sgeegl1
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	sgeegl1_reg.rss
+TARGET sgeegl1_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+
+
+USERINCLUDE	   ..\inc
+
+SYSTEMINCLUDE	 \epoc32\include
+SYSTEMINCLUDE	 \epoc32\include\SGE
+SYSTEMINCLUDE	 \epoc32\include\SGE\SGEApplication
+SYSTEMINCLUDE	 \epoc32\include\SGE\SGEEgl
+
+LIBRARY		   SGEApplication.lib
+LIBRARY		   libgles_cm.lib
+LIBRARY		   euser.lib ws32.lib
+STATICLIBRARY	   SGEEgl_staticlib.lib SGEGl_staticLib.lib
+
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xE22B50Ad
+//CAPABILITY	  	  ReadUserData NetworkServices
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+

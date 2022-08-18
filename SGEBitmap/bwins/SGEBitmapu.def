@@ -1,0 +1,55 @@
+EXPORTS
+	??0CSGEBitmapItem@@QAE@PAVCFbsBitmap@@0I@Z @ 1 NONAME ; CSGEBitmapItem::CSGEBitmapItem(class CFbsBitmap *, class CFbsBitmap *, unsigned int)
+	??0CSGEBitmapItemCreator@@QAE@AAVCSGEFile@@ABVTDesC16@@I@Z @ 2 NONAME ; CSGEBitmapItemCreator::CSGEBitmapItemCreator(class CSGEFile &, class TDesC16 const &, unsigned int)
+	??0CSGEBitmapItemCreator@@QAE@ABVTDesC16@@I@Z @ 3 NONAME ; CSGEBitmapItemCreator::CSGEBitmapItemCreator(class TDesC16 const &, unsigned int)
+	??0CSGEBitmapItemCreatorChild@@QAE@VTSize@@PAV0@I@Z @ 4 NONAME ; CSGEBitmapItemCreatorChild::CSGEBitmapItemCreatorChild(class TSize, class CSGEBitmapItemCreatorChild *, unsigned int)
+	??0CSGEBitmapItemCreatorChild@@QAE@W4TRotationAngle@CBitmapRotator@@PAV0@I@Z @ 5 NONAME ; CSGEBitmapItemCreatorChild::CSGEBitmapItemCreatorChild(enum CBitmapRotator::TRotationAngle, class CSGEBitmapItemCreatorChild *, unsigned int)
+	??1CSGEBitmapItem@@UAE@XZ @ 6 NONAME ; CSGEBitmapItem::~CSGEBitmapItem(void)
+	??1CSGEBitmapItemCreator@@UAE@XZ @ 7 NONAME ; CSGEBitmapItemCreator::~CSGEBitmapItemCreator(void)
+	??1CSGEBitmapItemCreatorChild@@UAE@XZ @ 8 NONAME ; CSGEBitmapItemCreatorChild::~CSGEBitmapItemCreatorChild(void)
+	??1CSGEBitmapProvider@@UAE@XZ @ 9 NONAME ; CSGEBitmapProvider::~CSGEBitmapProvider(void)
+	??1CSGEBitmapTransparent@@UAE@XZ @ 10 NONAME ; CSGEBitmapTransparent::~CSGEBitmapTransparent(void)
+	?AddActionL@CSGEBitmapItemCreatorChild@@QAEXPAV1@@Z @ 11 NONAME ; void CSGEBitmapItemCreatorChild::AddActionL(class CSGEBitmapItemCreatorChild *)
+	?AddBitmapItemL@CSGEBitmapProvider@@QAEXPAVCSGEBitmapItem@@@Z @ 12 NONAME ; void CSGEBitmapProvider::AddBitmapItemL(class CSGEBitmapItem *)
+	?AddChildActionL@CSGEBitmapItemCreator@@QAEXPAVCSGEBitmapItemCreatorChild@@@Z @ 13 NONAME ; void CSGEBitmapItemCreator::AddChildActionL(class CSGEBitmapItemCreatorChild *)
+	?AddImageToLoadL@CSGEBitmapProvider@@QAEXAAVCSGEFile@@ABVTDesC16@@I@Z @ 14 NONAME ; void CSGEBitmapProvider::AddImageToLoadL(class CSGEFile &, class TDesC16 const &, unsigned int)
+	?AddImageToLoadL@CSGEBitmapProvider@@QAEXABVTDesC16@@I@Z @ 15 NONAME ; void CSGEBitmapProvider::AddImageToLoadL(class TDesC16 const &, unsigned int)
+	?AddImageToLoadL@CSGEBitmapProvider@@QAEXPAVCSGEBitmapItemCreator@@@Z @ 16 NONAME ; void CSGEBitmapProvider::AddImageToLoadL(class CSGEBitmapItemCreator *)
+	?BitBlt@CSGEBitmapProvider@@QAEHAAVCBitmapContext@@VTPoint@@I@Z @ 17 NONAME ; int CSGEBitmapProvider::BitBlt(class CBitmapContext &, class TPoint, unsigned int)
+	?BitBlt@CSGEBitmapProvider@@QAEHAAVCBitmapContext@@VTPoint@@VTRect@@IH@Z @ 18 NONAME ; int CSGEBitmapProvider::BitBlt(class CBitmapContext &, class TPoint, class TRect, unsigned int, int)
+	?BitBlt@CSGEBitmapTransparent@@QAEXPAVCBitmapContext@@VTPoint@@VTRect@@H@Z @ 19 NONAME ; void CSGEBitmapTransparent::BitBlt(class CBitmapContext *, class TPoint, class TRect, int)
+	?BitBlt@CSGEBitmapTransparent@@QAEXPAVCBitmapContext@@VTRect@@@Z @ 20 NONAME ; void CSGEBitmapTransparent::BitBlt(class CBitmapContext *, class TRect)
+	?Bitmap@CSGEBitmapItem@@QBEPAVCFbsBitmap@@XZ @ 21 NONAME ; class CFbsBitmap * CSGEBitmapItem::Bitmap(void) const
+	?BitmapGc@CSGEBitmapTransparent@@QBEPAVCFbsBitGc@@XZ @ 22 NONAME ; class CFbsBitGc * CSGEBitmapTransparent::BitmapGc(void) const
+	?BitmapItem@CSGEBitmapProvider@@QAEPAVCSGEBitmapItem@@I@Z @ 23 NONAME ; class CSGEBitmapItem * CSGEBitmapProvider::BitmapItem(unsigned int)
+	?BitmapMask@CSGEBitmapItem@@QBEPAVCFbsBitmap@@XZ @ 24 NONAME ; class CFbsBitmap * CSGEBitmapItem::BitmapMask(void) const
+	?BitmapMaskGc@CSGEBitmapTransparent@@QBEPAVCFbsBitGc@@XZ @ 25 NONAME ; class CFbsBitGc * CSGEBitmapTransparent::BitmapMaskGc(void) const
+	?CopyBitmapToMask@CSGEBitmapTransparent@@QAEXXZ @ 26 NONAME ; void CSGEBitmapTransparent::CopyBitmapToMask(void)
+	?CreateBitmapSetL@CSGEBitmapProvider@@QAEXI@Z @ 27 NONAME ; void CSGEBitmapProvider::CreateBitmapSetL(unsigned int)
+	?CurrentBitmapSet@CSGEBitmapProvider@@QBEIXZ @ 28 NONAME ; unsigned int CSGEBitmapProvider::CurrentBitmapSet(void) const
+	?DuplicateFbsBitmapL@SGEBitmapUtils@@SAPAVCFbsBitmap@@ABV2@@Z @ 29 NONAME ; class CFbsBitmap * SGEBitmapUtils::DuplicateFbsBitmapL(class CFbsBitmap const &)
+	?DuplicateL@CSGEBitmapItem@@QBEPAV1@I@Z @ 30 NONAME ; class CSGEBitmapItem * CSGEBitmapItem::DuplicateL(unsigned int) const
+	?DuplicateL@CSGEBitmapItem@@QBEPAV1@XZ @ 31 NONAME ; class CSGEBitmapItem * CSGEBitmapItem::DuplicateL(void) const
+	?ExternalizeL@CSGEBitmapProvider@@QBEXAAVRWriteStream@@@Z @ 32 NONAME ; void CSGEBitmapProvider::ExternalizeL(class RWriteStream &) const
+	?Id@CSGEBitmapItem@@QBEIXZ @ 33 NONAME ; unsigned int CSGEBitmapItem::Id(void) const
+	?InternalizeL@CSGEBitmapProvider@@QAEXAAVRReadStream@@@Z @ 34 NONAME ; void CSGEBitmapProvider::InternalizeL(class RReadStream &)
+	?NewL@CSGEBitmapItem@@SAPAV1@IVTSize@@W4TDisplayMode@@1@Z @ 35 NONAME ; class CSGEBitmapItem * CSGEBitmapItem::NewL(unsigned int, class TSize, enum TDisplayMode, enum TDisplayMode)
+	?NewL@CSGEBitmapProvider@@SAPAV1@PAVMSGEBitmapProviderObserver@@@Z @ 36 NONAME ; class CSGEBitmapProvider * CSGEBitmapProvider::NewL(class MSGEBitmapProviderObserver *)
+	?NewL@CSGEBitmapTransparent@@SAPAV1@VTSize@@VTRgb@@E@Z @ 37 NONAME ; class CSGEBitmapTransparent * CSGEBitmapTransparent::NewL(class TSize, class TRgb, unsigned char)
+	?NewLC@CSGEBitmapItem@@SAPAV1@IVTSize@@W4TDisplayMode@@1@Z @ 38 NONAME ; class CSGEBitmapItem * CSGEBitmapItem::NewLC(unsigned int, class TSize, enum TDisplayMode, enum TDisplayMode)
+	?NewLC@CSGEBitmapProvider@@SAPAV1@PAVMSGEBitmapProviderObserver@@@Z @ 39 NONAME ; class CSGEBitmapProvider * CSGEBitmapProvider::NewLC(class MSGEBitmapProviderObserver *)
+	?NewLC@CSGEBitmapTransparent@@SAPAV1@VTSize@@VTRgb@@E@Z @ 40 NONAME ; class CSGEBitmapTransparent * CSGEBitmapTransparent::NewLC(class TSize, class TRgb, unsigned char)
+	?RemoveBitmapItem@CSGEBitmapProvider@@QAEXI@Z @ 41 NONAME ; void CSGEBitmapProvider::RemoveBitmapItem(unsigned int)
+	?RemoveBitmapItemAll@CSGEBitmapProvider@@QAEXXZ @ 42 NONAME ; void CSGEBitmapProvider::RemoveBitmapItemAll(void)
+	?RemoveBitmapSet@CSGEBitmapProvider@@QAEXI@Z @ 43 NONAME ; void CSGEBitmapProvider::RemoveBitmapSet(unsigned int)
+	?RemoveBitmapSetAll@CSGEBitmapProvider@@QAEXXZ @ 44 NONAME ; void CSGEBitmapProvider::RemoveBitmapSetAll(void)
+	?SelectBitmapSet@CSGEBitmapProvider@@QAEHI@Z @ 45 NONAME ; int CSGEBitmapProvider::SelectBitmapSet(unsigned int)
+	?SetObserver@CSGEBitmapProvider@@QAEXPAVMSGEBitmapProviderObserver@@@Z @ 46 NONAME ; void CSGEBitmapProvider::SetObserver(class MSGEBitmapProviderObserver *)
+	?StartLoadingImagesL@CSGEBitmapProvider@@QAEXXZ @ 47 NONAME ; void CSGEBitmapProvider::StartLoadingImagesL(void)
+	?TransformCurves@CSGEBitmapItem@@QAEXP6AXAAE00@Z@Z @ 48 NONAME ; void CSGEBitmapItem::TransformCurves(void (*)(unsigned char &, unsigned char &, unsigned char &))
+	?TransformCurves@SGEBitmapUtils@@SAXP6AXAAE00@ZAAVCFbsBitmap@@@Z @ 49 NONAME ; void SGEBitmapUtils::TransformCurves(void (*)(unsigned char &, unsigned char &, unsigned char &), class CFbsBitmap &)
+	?TransformCurvesMask@CSGEBitmapItem@@QAEXP6AXAAE00@Z@Z @ 50 NONAME ; void CSGEBitmapItem::TransformCurvesMask(void (*)(unsigned char &, unsigned char &, unsigned char &))
+	?TransformCurvesParam@SGEBitmapUtils@@SAXP6AXAAE00PAX@ZAAVCFbsBitmap@@1@Z @ 51 NONAME ; void SGEBitmapUtils::TransformCurvesParam(void (*)(unsigned char &, unsigned char &, unsigned char &, void *), class CFbsBitmap &, void *)
+	?TransformToBitmapItemLD@CSGEBitmapTransparent@@QAEPAVCSGEBitmapItem@@I@Z @ 52 NONAME ; class CSGEBitmapItem * CSGEBitmapTransparent::TransformToBitmapItemLD(unsigned int)
+	?CombineBitmapsL@SGEBitmapUtils@@SAPAVCFbsBitmap@@AAV2@0@Z @ 53 NONAME ; class CFbsBitmap * SGEBitmapUtils::CombineBitmapsL(class CFbsBitmap &, class CFbsBitmap &)
+

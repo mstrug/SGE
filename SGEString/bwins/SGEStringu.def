@@ -1,0 +1,16 @@
+EXPORTS
+	??1CSGEStringProvider@@UAE@XZ @ 1 NONAME ; CSGEStringProvider::~CSGEStringProvider(void)
+	?AddFileL@CSGEStringProvider@@QAEXAAVCSGEFile@@ABVTDesC16@@@Z @ 2 NONAME ; void CSGEStringProvider::AddFileL(class CSGEFile &, class TDesC16 const &)
+	?AddFileL@CSGEStringProvider@@QAEXAAVCSGEFile@@ABVTDesC16@@W4TLanguage@@@Z @ 3 NONAME ; void CSGEStringProvider::AddFileL(class CSGEFile &, class TDesC16 const &, enum TLanguage)
+	?AddFileL@CSGEStringProvider@@QAEXABVTDesC16@@@Z @ 4 NONAME ; void CSGEStringProvider::AddFileL(class TDesC16 const &)
+	?AddFileL@CSGEStringProvider@@QAEXABVTDesC16@@W4TLanguage@@@Z @ 5 NONAME ; void CSGEStringProvider::AddFileL(class TDesC16 const &, enum TLanguage)
+	?AddStringL@CSGEStringProvider@@QAEXABVTDesC16@@I@Z @ 6 NONAME ; void CSGEStringProvider::AddStringL(class TDesC16 const &, unsigned int)
+	?AddStringL@CSGEStringProvider@@QAEXABVTDesC16@@IW4TLanguage@@@Z @ 7 NONAME ; void CSGEStringProvider::AddStringL(class TDesC16 const &, unsigned int, enum TLanguage)
+	?ChangeLanguageL@CSGEStringProvider@@QAEXW4TLanguage@@@Z @ 8 NONAME ; void CSGEStringProvider::ChangeLanguageL(enum TLanguage)
+	?GetString@CSGEStringProvider@@QAE?AVTPtrC16@@HH@Z @ 9 NONAME ; class TPtrC16 CSGEStringProvider::GetString(int, int)
+	?GetStringL@CSGEStringProvider@@QAE?AVTPtrC16@@H@Z @ 10 NONAME ; class TPtrC16 CSGEStringProvider::GetStringL(int)
+	?GetStringL@CSGEStringProvider@@QAE?AVTPtrC16@@HW4TLanguage@@@Z @ 11 NONAME ; class TPtrC16 CSGEStringProvider::GetStringL(int, enum TLanguage)
+	?Language@CSGEStringProvider@@QBE?AW4TLanguage@@XZ @ 12 NONAME ; enum TLanguage CSGEStringProvider::Language(void) const
+	?NewL@CSGEStringProvider@@SAPAV1@XZ @ 13 NONAME ; class CSGEStringProvider * CSGEStringProvider::NewL(void)
+	?NewLC@CSGEStringProvider@@SAPAV1@XZ @ 14 NONAME ; class CSGEStringProvider * CSGEStringProvider::NewLC(void)
+

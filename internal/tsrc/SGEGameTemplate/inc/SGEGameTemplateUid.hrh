@@ -1,0 +1,17 @@
+/*
+ ============================================================================
+  Name        : SGEGameTemplateUid.h
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+#ifndef SGEGAMETEMPLATEUID_H_
+#define SGEGAMETEMPLATEUID_H_
+
+// application UID3
+#define _UID3 0xE1105DAb
+
+#endif // SGEGAMETEMPLATEUID_H_

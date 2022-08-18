@@ -1,0 +1,14 @@
+/*
+============================================================================
+ Name	     : bld.inf
+ Author	     : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+============================================================================
+*/
+
+#include "../sgeapptest/group/bld.inf"
+#include "../sgeappgametest/group/bld.inf"
+#include "../sgeappgamedstest/group/bld.inf"
+#include "../sgeappgamedsbtest/group/bld.inf"
+#include "../sgeappgamegltest/group/bld.inf"

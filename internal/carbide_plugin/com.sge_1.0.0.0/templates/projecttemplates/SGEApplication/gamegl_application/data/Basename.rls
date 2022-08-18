@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+  Name	      : $(baseName).rls
+  Author      : $(author)
+  Company     : $(company)
+  Version     : $(version)
+  Copyright   : $(copyright)
+  Description : This file contains all the resources for the $(baseName).
+ ============================================================================
+ */
+
+//  LOCALISATION STRINGS
+
+// Caption string for app.
+#define qtn_caption_string "$(baseName)"
+
+// Resource file
+#define qtn_loc_resource_file_1 "\\resource\\apps\\$(baseName)"
+
+// Icon file
+#define qtn_loc_icon_file_1 "\\resource\\apps\\$(baseName).mif"
+
+
+// Exit item in menu pane
+#define qtn_exit "Exit"
+
+
+// End of File

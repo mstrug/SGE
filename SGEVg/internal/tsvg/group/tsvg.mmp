@@ -1,0 +1,25 @@
+/*
+============================================================================
+ Name		: tsvg.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is the project specification file for tsvg.
+============================================================================
+*/
+
+TARGET		  tsvg.exe
+TARGETTYPE	  exe
+UID			 0 0xE9CF1128
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\platform
+
+SOURCEPATH	  ..\src
+SOURCE		  tsvg.cpp VgPath.cpp VgSvgParser.cpp VgSvgImage.cpp
+
+LIBRARY		 euser.lib xmlframework.lib bafl.lib libopenvg.lib gdi.lib libopenvgu.lib
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif

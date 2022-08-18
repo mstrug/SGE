@@ -1,0 +1,19 @@
+/*
+ ============================================================================
+  Name        : SGEGameTemplate.loc
+  Author      : Michal Strug
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+#ifndef SGEGAMETEMPLATE_LOC_
+#define SGEGAMETEMPLATE_LOC_
+
+
+#ifdef LANGUAGE_SC			// language code for UK
+#include "..\data\SGEGameTemplateLang.l01"
+
+#endif
+
+#endif //SGEGAMETEMPLATE_LOC_

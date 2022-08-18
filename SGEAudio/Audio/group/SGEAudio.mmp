@@ -1,0 +1,62 @@
+/*
+============================================================================
+ Name		: SGEAudio.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is the project specification file for SGEEgl.
+============================================================================
+*/
+
+TARGET		  SGEAudio.dll
+TARGETTYPE	  dll
+UID			  0x1000008d 0x025E87a5
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+SOURCEPATH	  ..\src
+
+SOURCE		  SGEAudioConfig.cpp SGEAudioEngine.cpp SGEAudioSample.cpp SGEAudioFileLoader.cpp SGEAudioFile.cpp SGEAudioFileDecoder.cpp SGEAudioFileDecoderWAV.cpp SGEAudioFileDecoderMP3.cpp SGEAudioSoundTrack.cpp SGEAudioStreamBase.cpp SGEAudioStreamMDA.cpp SGEAudioStreamMMF.cpp SGEAudioMixerBase.cpp SGEAudioMixerMono.cpp SGEAudioMixerStereo.cpp SGEAudioProvider.cpp SGEAudioProviderInternal.cpp SGEAudioIPCServer.cpp SGEAudioIPCSession.cpp SGEAudioIPCClient.cpp SGEAudioGPAO.cpp SGEAudioSimpleEngine.cpp SGEAudioSimplePlayer.cpp
+
+//By default, the build tools look for the WINSCW def file in a BWINS directory
+//(at the same level as the directory containing the mmp file), 
+//the GCC ARM def file in a BMARM directory, and the ARMV5 def file in a EABI directory. 
+//If def files are stored in these locations, the project files does not need to specify
+//the location of the def files explicitly. If you want to store the def files in some other 
+//location, you will need to specify in the project file where the .def files are using 
+//the deffile keyword.
+
+//The following commented out code shows how the build system uses the implicit
+// location for defiles. To create the DEF files Choose Project > Freeze Exports from Carbide
+// or run 'abld freeze' from the command-line
+//#if defined (WINS)
+//  DEFFILE ..\bwins\SGEFile.def
+//#elif defined (GCC32)
+//  DEFFILE ..\bmarm\SGEFile.def
+//#else 
+//  DEFFILE ..\eabi\SGEFile.def
+//#endif
+
+nostrictdef
+
+LIBRARY		 euser.lib estor.lib efsrv.lib bafl.lib
+LIBRARY      mediaclientaudiostream.lib mmfdevsound.lib
+LIBRARY      mmfserverbaseclasses.lib
+LIBRARY      SGEFILE.lib mediaclientaudio.lib ecom.lib centralrepository.lib
+//STATICLIBRARY   SGEFILE_staticlib.lib
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+
+CAPABILITY NetworkServices
+
+OPTION GCC -Wno-invalid-offsetof
+//OPTION GCC -w
+
+DEFFILE SGEAudio.def

@@ -1,0 +1,38 @@
+/*
+============================================================================
+ Name		: wav.mmp
+ Author	  : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : This is the project specification file for wav.
+============================================================================
+*/
+
+TARGET		  tdecoderwav.exe
+TARGETTYPE	  exe
+UID			 0 0xEF4D5318
+
+USERINCLUDE  ..\inc
+USERINCLUDE  ..\..\..\..\inc
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\SGE
+
+SOURCEPATH	  ..\src
+SOURCE		  wav.cpp
+
+SOURCEPATH    ..\..\..\..\src
+SOURCE        SGEAudioFileLoader.cpp
+SOURCE        SGEAudioFileDecoder.cpp
+SOURCE        SGEAudioFileDecoderWAV.cpp
+SOURCE        SGEAudioConfig.cpp
+SOURCE        SGEAudioSample.cpp
+SOURCE        SGEAudioFile.cpp
+
+LIBRARY		 euser.lib
+LIBRARY      efsrv.lib 
+LIBRARY      estor.lib 
+LIBRARY      bafl.lib 
+LIBRARY      SGEFile_staticlib.lib 
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif

@@ -1,0 +1,54 @@
+; Installation file for tsvgapp application
+;
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+;
+
+;Languages
+&EN
+
+; UID is the app's UID
+#{"tsvgapp"},(0xE96893B0),1,0,0
+
+;Unique Vendor name
+:"Michal Strug"
+
+;Localised Vendor name
+%{"Michal Strug"}
+
+;Supports Series 60 v 3.0, 3.1, 3.2
+;[0x101F7961], 0, 0, 0, {"S60ProductID"}
+[0x1028315F], 0, 0, 0, {"Series60ProductID"}  ; S3
+
+
+; Files to install
+
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\tsvgapp_0xE96893B0.exe"		-"!:\sys\bin\tsvgapp_0xE96893B0.exe"
+
+"$(EPOCROOT)Epoc32\data\z\resource\apps\tsvgapp_0xE96893B0.rsc"			-"!:\resource\apps\tsvgapp_0xE96893B0.rsc"
+"$(EPOCROOT)Epoc32\data\z\resource\apps\tsvgapp_0xE96893B0.mif"			-"!:\resource\apps\tsvgapp_0xE96893B0.mif"
+"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\tsvgapp_0xE96893B0_reg.rsc"		-"!:\private\10003a3f\import\apps\tsvgapp_0xE96893B0_reg.rsc"
+
+"..\data\svg\img1.svg"                       -"c:\data\svg\img1.svg"
+"..\data\svg\img2.svg"                       -"c:\data\svg\img2.svg"
+"..\data\svg\img3.svg"                       -"c:\data\svg\img3.svg"
+"..\data\svg\img4.svg"                       -"c:\data\svg\img4.svg"
+"..\data\svg\path_1.svg"                     -"c:\data\svg\path_1.svg"
+"..\data\svg\path_2.svg"                     -"c:\data\svg\path_2.svg"
+"..\data\svg\path_3.svg"                     -"c:\data\svg\path_3.svg"
+"..\data\svg\path_4.svg"                     -"c:\data\svg\path_4.svg"
+"..\data\svg\path_5.svg"                     -"c:\data\svg\path_5.svg"
+"..\data\svg\rect.svg"                       -"c:\data\svg\rect.svg"
+"..\data\svg\round_rect.svg"                 -"c:\data\svg\round_rect.svg"
+"..\data\svg\circle.svg"                     -"c:\data\svg\circle.svg"
+"..\data\svg\ellipse.svg"                    -"c:\data\svg\ellipse.svg"
+"..\data\svg\line.svg"                       -"c:\data\svg\line.svg"
+"..\data\svg\polygon.svg"                    -"c:\data\svg\polygon.svg"
+"..\data\svg\polyline.svg"                   -"c:\data\svg\polyline.svg"
+
+; remove 0x from the UID !
+;"..\sis\backup_registration.xml"						-"!:\private\0xE96893B0\backup_registration.xml"
+

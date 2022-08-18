@@ -1,0 +1,14 @@
+/*
+========================================================================
+ Name        : SGEAudioTester.hrh
+ Author      : Michal Strug
+ Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+ Description : 
+========================================================================
+*/
+enum TSGEAudioTesterViewUids
+    {
+    ESGEAudioTesterContainerViewId = 1,
+    ESGEAudioTesterSettingItemListViewId,
+    ESGEAudioTesterSettingItemListFile1ViewId
+    };

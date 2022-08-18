@@ -1,0 +1,47 @@
+/*
+ ============================================================================
+  Name        : SGEGui.mmp
+  Author      : Michal Strug
+  Version     : 1.0
+  Copyright   : Copyright (c) 2022 Michal Strug. All rights reserved.
+  Description : 
+ ============================================================================
+ */
+
+TARGET            SGEGui.dll
+TARGETTYPE        dll
+UID               0x1000008d 0x021CA219
+
+SOURCEPATH        ..\src
+SOURCE SGEGuiControlBase.cpp SGEGuiControlFbs.cpp SGEGuiManagerControl.cpp SGEGuiPageBase.cpp SGEGuiManagerPage.cpp
+
+
+USERINCLUDE       ..\inc
+SYSTEMINCLUDE     \epoc32\include 
+SYSTEMINCLUDE     \epoc32\include\SGE
+SYSTEMINCLUDE    \epoc32\include\mw
+SYSTEMINCLUDE    \epoc32\include\app
+SYSTEMINCLUDE    \epoc32\include\platform
+SYSTEMINCLUDE    \epoc32\include\platform\app
+SYSTEMINCLUDE    \epoc32\include\platform\mw
+
+
+LIBRARY           euser.lib bafl.lib estor.lib efsrv.lib 
+LIBRARY           sgebitmap.lib 
+LIBRARY           sgefont.lib 
+
+//STATICLIBRARY SGEFile_staticLib.lib
+
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+
+CAPABILITY NetworkServices
+
+//OPTION GCC -Wno-invalid-offsetof
+//OPTION GCC -w
+
+EXPORTUNFROZEN
+
+
