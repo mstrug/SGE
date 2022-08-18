@@ -53,3 +53,5 @@ UML design files are available in each module in subfolder `internal/doc`. StarU
 
 ## Examples
 Examples of use are available in each module in subfolder `internal/tsrc`.
+
+Applications created using SGE can be found on web page: www.mbrsoftware.com
